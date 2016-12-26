@@ -15,6 +15,7 @@
           url: '/medalTemplet',
           templateUrl: 'app/pages/management/medalTemplet/medalTemplet.html',
           title: '勋章模板上传下载',
+          controller:"medalTempletCtrl",
           sidebarMeta: {
             icon: 'ion-android-home',
             order: 0,
