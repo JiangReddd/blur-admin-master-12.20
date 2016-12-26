@@ -15,7 +15,13 @@
 
       'BlurAdmin.pages.management.medalTemplet',
 
+      'BlurAdmin.pages.management.accumulationRuleModify',
 
+      'BlurAdmin.pages.management.accumulationOperationList',
+
+      'BlurAdmin.pages.management.accumulationTemplet',
+
+      'BlurAdmin.pages.management.accumulationRelease',
 
     ])
     .config(routeConfig);

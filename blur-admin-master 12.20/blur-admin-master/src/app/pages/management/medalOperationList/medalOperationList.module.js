@@ -17,7 +17,7 @@
           templateUrl: 'app/pages/management/medalOperationList/medalOperationList.html',
           title: '勋章操作列表',
           sidebarMeta: {
-            order: 0,
+            order: 200,
           },
         }).state('management.medalOperationList.list', {
           url: '/list',

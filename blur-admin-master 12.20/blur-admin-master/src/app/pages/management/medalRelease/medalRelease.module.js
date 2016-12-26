@@ -18,7 +18,7 @@
           title: '勋章发放记录',
           sidebarMeta: {
             icon: 'ion-android-home',
-            order: 0,
+            order: 100,
           },
         });
   }
