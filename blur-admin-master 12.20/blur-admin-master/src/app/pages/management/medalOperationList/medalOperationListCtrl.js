@@ -16,663 +16,497 @@
     $scope.smartTableData = [
       {
         id: 1,
-        medalName: '笔杆子',
-        type: 'Otto',
-        intro: '@mdo',
-        priority: 'mdo@gmail.com',
-        available: '28'
+        Medal_Name: '笔杆子',
+        type: '常规',
+        Medal_Info: '@mdo',
+        Priority_Num: '100',
+        Is_Enable: '1'
       },
       {
         id: 2,
-        medalName: '金手指',
-        type: 'Thornton',
-        intro: '@fat',
-        priority: 'fat@yandex.ru',
-        available: '45'
+        Medal_Name: '金手指',
+        type: '常规',
+        Medal_Info: '@fat',
+        Priority_Num: '111',
+        Is_Enable: '0'
       },
       {
         id: 3,
-        medalName: 'Larry',
-        type: 'Bird',
-        intro: '@twitter',
-        priority: 'twitter@outlook.com',
-        available: '18'
+        Medal_Name: '铁算盘',
+        type: '职业生涯',
+        Medal_Info: '@twitter',
+        Priority_Num: '230',
+        Is_Enable: '1'
       },
       {
         id: 4,
-        medalName: 'John',
-        type: 'Snow',
-        intro: '@snow',
-        priority: 'snow@gmail.com',
-        available: '20'
+        Medal_Name: 'John',
+        type: '职业生涯',
+        Medal_Info: '@snow',
+        Priority_Num: '100',
+        Is_Enable: '1'
       },
       {
         id: 5,
-        medalName: 'Jack',
-        type: 'Sparrow',
-        intro: '@jack',
-        priority: 'jack@yandex.ru',
-        available: '30'
+        Medal_Name: 'Jack',
+        type: '年度勋章',
+        Medal_Info: '@jack',
+        Priority_Num: '100',
+        Is_Enable: '0'
       },
       {
         id: 6,
-        medalName: 'Ann',
-        type: 'Smith',
-        intro: '@ann',
-        priority: 'ann@gmail.com',
-        available: '21'
+        Medal_Name: 'Ann',
+        type: '职业生涯',
+        Medal_Info: '@ann',
+        Priority_Num: '100',
+        Is_Enable: '0'
       },
       {
         id: 7,
-        medalName: 'Barbara',
-        type: 'Black',
-        intro: '@barbara',
-        priority: 'barbara@yandex.ru',
-        available: '43'
+        Medal_Name: 'Barbara',
+        type: '职业生涯',
+        Medal_Info: '@barbara',
+        Priority_Num: '101',
+        Is_Enable: '0'
       },
       {
         id: 8,
-        medalName: 'Sevan',
-        type: 'Bagrat',
-        intro: '@sevan',
-        priority: 'sevan@outlook.com',
-        available: '13'
+        Medal_Name: 'Sevan',
+        type: '职业生涯',
+        Medal_Info: '@sevan',
+        Priority_Num: '102',
+        Is_Enable: '1'
       },
       {
         id: 9,
-        medalName: 'Ruben',
-        type: 'Vardan',
-        intro: '@ruben',
-        priority: 'ruben@gmail.com',
-        available: '22'
+        Medal_Name: 'Ruben',
+        type: '职业生涯',
+        Medal_Info: '@ruben',
+        Priority_Num: '33',
+        Is_Enable: '1'
       },
       {
         id: 10,
-        medalName: 'Karen',
-        type: 'Sevan',
-        intro: '@karen',
-        priority: 'karen@yandex.ru',
-        available: '33'
+        Medal_Name: 'Karen',
+        type: '职业生涯',
+        Medal_Info: '@karen',
+        Priority_Num: '100',
+        Is_Enable: '1'
       },
       {
         id: 11,
-        medalName: 'Mark',
-        type: 'Otto',
-        intro: '@mark',
-        priority: 'mark@gmail.com',
-        available: '38'
+        Medal_Name: 'Mark',
+        type: '职业生涯',
+        Medal_Info: '@mark',
+        Priority_Num: 'mark@gmail.com',
+        Is_Enable: '38'
       },
       {
         id: 12,
-        medalName: 'Jacob',
+        Medal_Name: 'Jacob',
         type: 'Thornton',
-        intro: '@jacob',
-        priority: 'jacob@yandex.ru',
-        available: '48'
+        Medal_Info: '@jacob',
+        Priority_Num: 'jacob@yandex.ru',
+        Is_Enable: '48'
       },
       {
         id: 13,
-        medalName: 'Haik',
+        Medal_Name: 'Haik',
         type: 'Hakob',
-        intro: '@haik',
-        priority: 'haik@outlook.com',
-        available: '48'
+        Medal_Info: '@haik',
+        Priority_Num: 'haik@outlook.com',
+        Is_Enable: '48'
       },
       {
         id: 14,
-        medalName: 'Garegin',
+        Medal_Name: 'Garegin',
         type: 'Jirair',
-        intro: '@garegin',
-        priority: 'garegin@gmail.com',
-        available: '40'
+        Medal_Info: '@garegin',
+        Priority_Num: 'garegin@gmail.com',
+        Is_Enable: '40'
       },
       {
         id: 15,
-        medalName: 'Krikor',
+        Medal_Name: 'Krikor',
         type: 'Bedros',
-        intro: '@krikor',
-        priority: 'krikor@yandex.ru',
-        available: '32'
+        Medal_Info: '@krikor',
+        Priority_Num: 'krikor@yandex.ru',
+        Is_Enable: '32'
       },
       {
         "id": 16,
-        "medalName": "Francisca",
+        "Medal_Name": "Francisca",
         "type": "Brady",
-        "intro": "@Gibson",
-        "priority": "franciscagibson@comtours.com",
-        "available": 11
+        "Medal_Info": "@Gibson",
+        "Priority_Num": "franciscagibson@comtours.com",
+        "Is_Enable": 11
       },
       {
         "id": 17,
-        "medalName": "Tillman",
+        "Medal_Name": "Tillman",
         "type": "Figueroa",
-        "intro": "@Snow",
-        "priority": "tillmansnow@comtours.com",
-        "available": 34
+        "Medal_Info": "@Snow",
+        "Priority_Num": "tillmansnow@comtours.com",
+        "Is_Enable": 34
       },
       {
         "id": 18,
-        "medalName": "Jimenez",
+        "Medal_Name": "Jimenez",
         "type": "Morris",
-        "intro": "@Bryant",
-        "priority": "jimenezbryant@comtours.com",
-        "available": 45
+        "Medal_Info": "@Bryant",
+        "Priority_Num": "jimenezbryant@comtours.com",
+        "Is_Enable": 45
       },
       {
         "id": 19,
-        "medalName": "Sandoval",
+        "Medal_Name": "Sandoval",
         "type": "Jacobson",
-        "intro": "@Mcbride",
-        "priority": "sandovalmcbride@comtours.com",
-        "available": 32
+        "Medal_Info": "@Mcbride",
+        "Priority_Num": "sandovalmcbride@comtours.com",
+        "Is_Enable": 32
       },
       {
         "id": 20,
-        "medalName": "Griffin",
+        "Medal_Name": "Griffin",
         "type": "Torres",
-        "intro": "@Charles",
-        "priority": "griffincharles@comtours.com",
-        "available": 19
+        "Medal_Info": "@Charles",
+        "Priority_Num": "griffincharles@comtours.com",
+        "Is_Enable": 19
       },
       {
         "id": 21,
-        "medalName": "Cora",
+        "Medal_Name": "Cora",
         "type": "Parker",
-        "intro": "@Caldwell",
-        "priority": "coracaldwell@comtours.com",
-        "available": 27
+        "Medal_Info": "@Caldwell",
+        "Priority_Num": "coracaldwell@comtours.com",
+        "Is_Enable": 27
       },
       {
         "id": 22,
-        "medalName": "Cindy",
+        "Medal_Name": "Cindy",
         "type": "Bond",
-        "intro": "@Velez",
-        "priority": "cindyvelez@comtours.com",
-        "available": 24
+        "Medal_Info": "@Velez",
+        "Priority_Num": "cindyvelez@comtours.com",
+        "Is_Enable": 24
       },
       {
         "id": 23,
-        "medalName": "Frieda",
+        "Medal_Name": "Frieda",
         "type": "Tyson",
-        "intro": "@Craig",
-        "priority": "friedacraig@comtours.com",
-        "available": 45
+        "Medal_Info": "@Craig",
+        "Priority_Num": "friedacraig@comtours.com",
+        "Is_Enable": 45
       },
       {
         "id": 24,
-        "medalName": "Cote",
+        "Medal_Name": "Cote",
         "type": "Holcomb",
-        "intro": "@Rowe",
-        "priority": "coterowe@comtours.com",
-        "available": 20
+        "Medal_Info": "@Rowe",
+        "Priority_Num": "coterowe@comtours.com",
+        "Is_Enable": 20
       },
       {
         "id": 25,
-        "medalName": "Trujillo",
+        "Medal_Name": "Trujillo",
         "type": "Mejia",
-        "intro": "@Valenzuela",
-        "priority": "trujillovalenzuela@comtours.com",
-        "available": 16
+        "Medal_Info": "@Valenzuela",
+        "Priority_Num": "trujillovalenzuela@comtours.com",
+        "Is_Enable": 16
       },
       {
         "id": 26,
-        "medalName": "Pruitt",
+        "Medal_Name": "Pruitt",
         "type": "Shepard",
-        "intro": "@Sloan",
-        "priority": "pruittsloan@comtours.com",
-        "available": 44
+        "Medal_Info": "@Sloan",
+        "Priority_Num": "pruittsloan@comtours.com",
+        "Is_Enable": 44
       },
       {
         "id": 27,
-        "medalName": "Sutton",
+        "Medal_Name": "Sutton",
         "type": "Ortega",
-        "intro": "@Black",
-        "priority": "suttonblack@comtours.com",
-        "available": 42
+        "Medal_Info": "@Black",
+        "Priority_Num": "suttonblack@comtours.com",
+        "Is_Enable": 42
       },
       {
         "id": 28,
-        "medalName": "Marion",
+        "Medal_Name": "Marion",
         "type": "Heath",
-        "intro": "@Espinoza",
-        "priority": "marionespinoza@comtours.com",
-        "available": 47
+        "Medal_Info": "@Espinoza",
+        "Priority_Num": "marionespinoza@comtours.com",
+        "Is_Enable": 47
       },
       {
         "id": 29,
-        "medalName": "Newman",
+        "Medal_Name": "Newman",
         "type": "Hicks",
-        "intro": "@Keith",
-        "priority": "newmankeith@comtours.com",
-        "available": 15
+        "Medal_Info": "@Keith",
+        "Priority_Num": "newmankeith@comtours.com",
+        "Is_Enable": 15
       },
       {
         "id": 30,
-        "medalName": "Boyle",
+        "Medal_Name": "Boyle",
         "type": "Larson",
-        "intro": "@Summers",
-        "priority": "boylesummers@comtours.com",
-        "available": 32
+        "Medal_Info": "@Summers",
+        "Priority_Num": "boylesummers@comtours.com",
+        "Is_Enable": 32
       },
       {
         "id": 31,
-        "medalName": "Haynes",
+        "Medal_Name": "Haynes",
         "type": "Vinson",
-        "intro": "@Mckenzie",
-        "priority": "haynesmckenzie@comtours.com",
-        "available": 15
+        "Medal_Info": "@Mckenzie",
+        "Priority_Num": "haynesmckenzie@comtours.com",
+        "Is_Enable": 15
       },
       {
         "id": 32,
-        "medalName": "Miller",
+        "Medal_Name": "Miller",
         "type": "Acosta",
-        "intro": "@Young",
-        "priority": "milleryoung@comtours.com",
-        "available": 55
+        "Medal_Info": "@Young",
+        "Priority_Num": "milleryoung@comtours.com",
+        "Is_Enable": 55
       },
       {
         "id": 33,
-        "medalName": "Johnston",
+        "Medal_Name": "Johnston",
         "type": "Brown",
-        "intro": "@Knight",
-        "priority": "johnstonknight@comtours.com",
-        "available": 29
+        "Medal_Info": "@Knight",
+        "Priority_Num": "johnstonknight@comtours.com",
+        "Is_Enable": 29
       },
       {
         "id": 34,
-        "medalName": "Lena",
+        "Medal_Name": "Lena",
         "type": "Pitts",
-        "intro": "@Forbes",
-        "priority": "lenaforbes@comtours.com",
-        "available": 25
+        "Medal_Info": "@Forbes",
+        "Priority_Num": "lenaforbes@comtours.com",
+        "Is_Enable": 25
       },
       {
         "id": 35,
-        "medalName": "Terrie",
+        "Medal_Name": "Terrie",
         "type": "Kennedy",
-        "intro": "@Branch",
-        "priority": "terriebranch@comtours.com",
-        "available": 37
+        "Medal_Info": "@Branch",
+        "Priority_Num": "terriebranch@comtours.com",
+        "Is_Enable": 37
       },
       {
         "id": 36,
-        "medalName": "Louise",
+        "Medal_Name": "Louise",
         "type": "Aguirre",
-        "intro": "@Kirby",
-        "priority": "louisekirby@comtours.com",
-        "available": 44
+        "Medal_Info": "@Kirby",
+        "Priority_Num": "louisekirby@comtours.com",
+        "Is_Enable": 44
       },
       {
         "id": 37,
-        "medalName": "David",
+        "Medal_Name": "David",
         "type": "Patton",
-        "intro": "@Sanders",
-        "priority": "davidsanders@comtours.com",
-        "available": 26
+        "Medal_Info": "@Sanders",
+        "Priority_Num": "davidsanders@comtours.com",
+        "Is_Enable": 26
       },
       {
         "id": 38,
-        "medalName": "Holden",
+        "Medal_Name": "Holden",
         "type": "Barlow",
-        "intro": "@Mckinney",
-        "priority": "holdenmckinney@comtours.com",
-        "available": 11
+        "Medal_Info": "@Mckinney",
+        "Priority_Num": "holdenmckinney@comtours.com",
+        "Is_Enable": 11
       },
       {
         "id": 39,
-        "medalName": "Baker",
+        "Medal_Name": "Baker",
         "type": "Rivera",
-        "intro": "@Montoya",
-        "priority": "bakermontoya@comtours.com",
-        "available": 47
+        "Medal_Info": "@Montoya",
+        "Priority_Num": "bakermontoya@comtours.com",
+        "Is_Enable": 47
       },
       {
         "id": 40,
-        "medalName": "Belinda",
+        "Medal_Name": "Belinda",
         "type": "Lloyd",
-        "intro": "@Calderon",
-        "priority": "belindacalderon@comtours.com",
-        "available": 21
+        "Medal_Info": "@Calderon",
+        "Priority_Num": "belindacalderon@comtours.com",
+        "Is_Enable": 21
       },
       {
         "id": 41,
-        "medalName": "Pearson",
+        "Medal_Name": "Pearson",
         "type": "Patrick",
-        "intro": "@Clements",
-        "priority": "pearsonclements@comtours.com",
-        "available": 42
+        "Medal_Info": "@Clements",
+        "Priority_Num": "pearsonclements@comtours.com",
+        "Is_Enable": 42
       },
       {
         "id": 42,
-        "medalName": "Alyce",
+        "Medal_Name": "Alyce",
         "type": "Mckee",
-        "intro": "@Daugherty",
-        "priority": "alycedaugherty@comtours.com",
-        "available": 55
+        "Medal_Info": "@Daugherty",
+        "Priority_Num": "alycedaugherty@comtours.com",
+        "Is_Enable": 55
       },
      {
         "id": 43,
-        "medalName": "Valencia",
+        "Medal_Name": "Valencia",
         "type": "Spence",
-        "intro": "@Olsen",
-        "priority": "valenciaolsen@comtours.com",
-        "available": 20
+        "Medal_Info": "@Olsen",
+        "Priority_Num": "valenciaolsen@comtours.com",
+        "Is_Enable": 20
       },
       {
         "id": 44,
-        "medalName": "Leach",
+        "Medal_Name": "Leach",
         "type": "Holcomb",
-        "intro": "@Humphrey",
-        "priority": "leachhumphrey@comtours.com",
-        "available": 28
+        "Medal_Info": "@Humphrey",
+        "Priority_Num": "leachhumphrey@comtours.com",
+        "Is_Enable": 28
       },
       {
         "id": 45,
-        "medalName": "Moss",
+        "Medal_Name": "Moss",
         "type": "Baxter",
-        "intro": "@Fitzpatrick",
-        "priority": "mossfitzpatrick@comtours.com",
-        "available": 51
+        "Medal_Info": "@Fitzpatrick",
+        "Priority_Num": "mossfitzpatrick@comtours.com",
+        "Is_Enable": 51
       },
       {
         "id": 46,
-        "medalName": "Jeanne",
+        "Medal_Name": "Jeanne",
         "type": "Cooke",
-        "intro": "@Ward",
-        "priority": "jeanneward@comtours.com",
-        "available": 59
+        "Medal_Info": "@Ward",
+        "Priority_Num": "jeanneward@comtours.com",
+        "Is_Enable": 59
       },
       {
         "id": 47,
-        "medalName": "Wilma",
+        "Medal_Name": "Wilma",
         "type": "Briggs",
-        "intro": "@Kidd",
-        "priority": "wilmakidd@comtours.com",
-        "available": 53
+        "Medal_Info": "@Kidd",
+        "Priority_Num": "wilmakidd@comtours.com",
+        "Is_Enable": 53
       },
       {
         "id": 48,
-        "medalName": "Beatrice",
+        "Medal_Name": "Beatrice",
         "type": "Perry",
-        "intro": "@Gilbert",
-        "priority": "beatricegilbert@comtours.com",
-        "available": 39
+        "Medal_Info": "@Gilbert",
+        "Priority_Num": "beatricegilbert@comtours.com",
+        "Is_Enable": 39
       },
       {
         "id": 49,
-        "medalName": "Whitaker",
+        "Medal_Name": "Whitaker",
         "type": "Hyde",
-        "intro": "@Mcdonald",
-        "priority": "whitakermcdonald@comtours.com",
-        "available": 35
+        "Medal_Info": "@Mcdonald",
+        "Priority_Num": "whitakermcdonald@comtours.com",
+        "Is_Enable": 35
       },
       {
         "id": 50,
-        "medalName": "Rebekah",
+        "Medal_Name": "Rebekah",
         "type": "Duran",
-        "intro": "@Gross",
-        "priority": "rebekahgross@comtours.com",
-        "available": 40
+        "Medal_Info": "@Gross",
+        "Priority_Num": "rebekahgross@comtours.com",
+        "Is_Enable": 40
       },
       {
         "id": 51,
-        "medalName": "Earline",
+        "Medal_Name": "Earline",
         "type": "Mayer",
-        "intro": "@Woodward",
-        "priority": "earlinewoodward@comtours.com",
-        "available": 52
+        "Medal_Info": "@Woodward",
+        "Priority_Num": "earlinewoodward@comtours.com",
+        "Is_Enable": 52
       },
       {
         "id": 52,
-        "medalName": "Moran",
+        "Medal_Name": "Moran",
         "type": "Baxter",
-        "intro": "@Johns",
-        "priority": "moranjohns@comtours.com",
-        "available": 20
+        "Medal_Info": "@Johns",
+        "Priority_Num": "moranjohns@comtours.com",
+        "Is_Enable": 20
       },
       {
         "id": 53,
-        "medalName": "Nanette",
+        "Medal_Name": "Nanette",
         "type": "Hubbard",
-        "intro": "@Cooke",
-        "priority": "nanettecooke@comtours.com",
-        "available": 55
+        "Medal_Info": "@Cooke",
+        "Priority_Num": "nanettecooke@comtours.com",
+        "Is_Enable": 55
       },
       {
         "id": 54,
-        "medalName": "Dalton",
+        "Medal_Name": "Dalton",
         "type": "Walker",
-        "intro": "@Hendricks",
-        "priority": "daltonhendricks@comtours.com",
-        "available": 25
+        "Medal_Info": "@Hendricks",
+        "Priority_Num": "daltonhendricks@comtours.com",
+        "Is_Enable": 25
       },
       {
         "id": 55,
-        "medalName": "Bennett",
+        "Medal_Name": "Bennett",
         "type": "Blake",
-        "intro": "@Pena",
-        "priority": "bennettpena@comtours.com",
-        "available": 13
+        "Medal_Info": "@Pena",
+        "Priority_Num": "bennettpena@comtours.com",
+        "Is_Enable": 13
       },
       {
         "id": 56,
-        "medalName": "Kellie",
+        "Medal_Name": "Kellie",
         "type": "Horton",
-        "intro": "@Weiss",
-        "priority": "kellieweiss@comtours.com",
-        "available": 48
+        "Medal_Info": "@Weiss",
+        "Priority_Num": "kellieweiss@comtours.com",
+        "Is_Enable": 48
       },
       {
         "id": 57,
-        "medalName": "Hobbs",
+        "Medal_Name": "Hobbs",
         "type": "Talley",
-        "intro": "@Sanford",
-        "priority": "hobbssanford@comtours.com",
-        "available": 28
+        "Medal_Info": "@Sanford",
+        "Priority_Num": "hobbssanford@comtours.com",
+        "Is_Enable": 28
       },
       {
         "id": 58,
-        "medalName": "Mcguire",
+        "Medal_Name": "Mcguire",
         "type": "Donaldson",
-        "intro": "@Roman",
-        "priority": "mcguireroman@comtours.com",
-        "available": 38
+        "Medal_Info": "@Roman",
+        "Priority_Num": "mcguireroman@comtours.com",
+        "Is_Enable": 38
       },
       {
         "id": 59,
-        "medalName": "Rodriquez",
+        "Medal_Name": "Rodriquez",
         "type": "Saunders",
-        "intro": "@Harper",
-        "priority": "rodriquezharper@comtours.com",
-        "available": 20
+        "Medal_Info": "@Harper",
+        "Priority_Num": "rodriquezharper@comtours.com",
+        "Is_Enable": 20
       },
       {
         "id": 60,
-        "medalName": "Lou",
+        "Medal_Name": "Lou",
         "type": "Conner",
-        "intro": "@Sanchez",
-        "priority": "lousanchez@comtours.com",
-        "available": 16
+        "Medal_Info": "@Sanchez",
+        "Priority_Num": "lousanchez@comtours.com",
+        "Is_Enable": 16
       }
     ];
 
     $scope.editableTableData = $scope.smartTableData.slice(0, 36);
 
-    $scope.peopleTableData = [
-      {
-        id: 1,
-        medalName: 'Mark',
-        type: 'Otto',
-        intro: '@mdo',
-        priority: 'mdo@gmail.com',
-        age: '28',
-        status: 'info'
-      },
-      {
-        id: 2,
-        medalName: 'Jacob',
-        type: 'Thornton',
-        intro: '@fat',
-        priority: 'fat@yandex.ru',
-        age: '45',
-        status: 'primary'
-      },
-      {
-        id: 3,
-        medalName: 'Larry',
-        type: 'Bird',
-        intro: '@twitter',
-        priority: 'twitter@outlook.com',
-        age: '18',
-        status: 'success'
-      },
-      {
-        id: 4,
-        medalName: 'John',
-        type: 'Snow',
-        intro: '@snow',
-        priority: 'snow@gmail.com',
-        age: '20',
-        status: 'danger'
-      },
-      {
-        id: 5,
-        medalName: 'Jack',
-        type: 'Sparrow',
-        intro: '@jack',
-        priority: 'jack@yandex.ru',
-        age: '30',
-        status: 'warning'
-      }
-    ];
 
-    $scope.metricsTableData = [
-      {
-        image: 'app/browsers/chrome.svg',
-        browser: 'Google Chrome',
-        visits: '10,392',
-        isVisitsUp: true,
-        purchases: '4,214',
-        isPurchasesUp: true,
-        percent: '45%',
-        isPercentUp: true
-      },
-      {
-        image: 'app/browsers/firefox.svg',
-        browser: 'Mozilla Firefox',
-        visits: '7,873',
-        isVisitsUp: true,
-        purchases: '3,031',
-        isPurchasesUp: false,
-        percent: '28%',
-        isPercentUp: true
-      },
-      {
-        image: 'app/browsers/ie.svg',
-        browser: 'Internet Explorer',
-        visits: '5,890',
-        isVisitsUp: false,
-        purchases: '2,102',
-        isPurchasesUp: false,
-        percent: '17%',
-        isPercentUp: false
-      },
-      {
-        image: 'app/browsers/safari.svg',
-        browser: 'Safari',
-        visits: '4,001',
-        isVisitsUp: false,
-        purchases: '1,001',
-        isPurchasesUp: false,
-        percent: '14%',
-        isPercentUp: true
-      },
-      {
-        image: 'app/browsers/opera.svg',
-        browser: 'Opera',
-        visits: '1,833',
-        isVisitsUp: true,
-        purchases: '83',
-        isPurchasesUp: true,
-        percent: '5%',
-        isPercentUp: false
-      }
-    ];
-
-    $scope.users = [
-      {
-        "id": 1,
-        "name": "Esther Vang",
-        "status": 4,
-        "group": 3
-      },
-      {
-        "id": 2,
-        "name": "Leah Freeman",
-        "status": 3,
-        "group": 1
-      },
-      {
-        "id": 3,
-        "name": "Mathews Simpson",
-        "status": 3,
-        "group": 2
-      },
-      {
-        "id": 4,
-        "name": "Buckley Hopkins",
-        "group": 4
-      },
-      {
-        "id": 5,
-        "name": "Buckley Schwartz",
-        "status": 1,
-        "group": 1
-      },
-      {
-        "id": 6,
-        "name": "Mathews Hopkins",
-        "status": 4,
-        "group": 2
-      },
-      {
-        "id": 7,
-        "name": "Leah Vang",
-        "status": 4,
-        "group": 1
-      },
-      {
-        "id": 8,
-        "name": "Vang Schwartz",
-        "status": 4,
-        "group": 2
-      },
-      {
-        "id": 9,
-        "name": "Hopkin Esther",
-        "status": 1,
-        "group": 2
-      },
-      {
-        "id": 10,
-        "name": "Mathews Schwartz",
-        "status": 1,
-        "group": 3
-      }
-    ];
-
-    $scope.statuses = [
-      {value: 1, text: 'Good'},
-      {value: 2, text: 'Awesome'},
-      {value: 3, text: 'Excellent'},
-    ];
-
-    $scope.groups = [
-      {id: 1, text: 'user'},
-      {id: 2, text: 'customer'},
-      {id: 3, text: 'vip'},
-      {id: 4, text: 'admin'}
-    ];
+    $.each($scope.smartTableData,function(i){
+        if($scope.smartTableData[i].Is_Enable == "1"){
+          $scope.smartTableData[i].Is_Enable = "启用";
+        }
+        else{
+          $scope.smartTableData[i].Is_Enable = "停用";
+        }
+    });
 
     $scope.showGroup = function(user) {
       if(user.group && $scope.groups.length) {

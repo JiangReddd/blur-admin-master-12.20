@@ -1,18 +1,12 @@
 [
       {
         "id": "1",
-        "medalName": "笔杆子",
-        "type": "Otto",
-        "intro": "@mdo",
-        "priority": "5",
-        "available": "启用"
+        "credititem": "笔杆子",
+        "isenable": "启用"
       },
       {
         "id": "2",
-        "medalName": "金手指",
-        "type": "Thornton",
-        "intro": "@fat",
-        "priority": "4",
-        "available": "停用"
+        "credititem": "金手指",
+        "isenable": "停用"
       }
     ]

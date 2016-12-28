@@ -18,7 +18,13 @@
 			}).reverse();
 			vm.mail = messages.filter(function(m) {
 				return m.id == $stateParams.id;
-			})[0];   
+			})[0]; 
+			if(vm.mail.isenable == "启用"){
+				$("#isenable").attr("checked",true);
+			}
+			else{
+				$("#isenable1").attr("checked",true);
+			}; 
 		});
 		vm.label = $stateParams.label;
 	}

@@ -15,36 +15,24 @@
             <thead>
             <tr class="sortable ">
               <th class="table-id" st-sort="id" st-sort-default="true">#</th>
-              <th st-sort="medalName">勋章名称</th>
-              <th st-sort="type">勋章类型</th>
-              <th st-sort="intro">介绍</th>
-              <th st-sort="priority">优先级</th>
-              <th st-sort="available">是否启用</th>
+              <th st-sort="credititem">积分名称</th>
+              <th st-sort="isenable">是否启用</th>
               <th st-sort="">操作</th>
             </tr>
             <tr>
               <th></th>
-              <th><input st-search="medalName" placeholder="Search medalName" class="input-sm form-control search-input"
+              <th><input st-search="credititem" placeholder="Search credititem" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input st-search="type" placeholder="Search Type" class="input-sm form-control search-input"
-                         type="search"/></th>
-              <th><input st-search="intro" placeholder="Search Intro" class="input-sm form-control search-input"
-                         type="search"/></th>
-              <th><input st-search="priority" placeholder="Search Priority" class="input-sm form-control search-input" type="search"/>
+              <th><input st-search="isenable" placeholder="Search isenable" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th><input st-search="available" placeholder="Search Available" class="input-sm form-control search-input" type="search"/>
-              </th>
-              <th></th>
+              <th><a ui-sref="management.accumulationOperationList.add">新增</a></th>
             </tr>
             </thead>
             <tbody>
             <tr ng-repeat="item in smartTableData">
               <td class="table-id">{{item.id}}</td>
-              <td>{{item.medalName}}</td>
-              <td>{{item.type}}</td>
-              <td>{{item.intro}}</td>
-              <td>{{item.priority}}</td>
-              <td>{{item.available}}</td>
+              <td>{{item.credititem}}</td>
+              <td>{{item.isenable}}</td>
               <td><a ui-sref="management.accumulationOperationList.modify({id: item.id})">修改</a></td>
             </tr>
             </tbody>

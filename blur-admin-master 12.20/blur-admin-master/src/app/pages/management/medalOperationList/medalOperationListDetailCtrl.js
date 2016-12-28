@@ -19,6 +19,18 @@
 			vm.mail = messages.filter(function(m) {
 				return m.id == $stateParams.id;
 			})[0];   
+			if(vm.mail.Is_Enable == "1"){
+				$("#Is_Enable").attr("checked",true);
+			}
+			else{
+				$("#Is_Enable1").attr("checked",true);
+			}; 
+			if(vm.mail.Grow_Type == "1"){
+				$("#Grow_Type").attr("checked",true);
+			}
+			else{
+				$("#Grow_Type1").attr("checked",true);
+			}; 
 		});
 		vm.label = $stateParams.label;
 	}

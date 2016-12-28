@@ -15,36 +15,36 @@
             <thead>
             <tr class="sortable ">
               <th class="table-id" st-sort="id" st-sort-default="true">#</th>
-              <th st-sort="medalName">勋章名称</th>
+              <th st-sort="Medal_Name">勋章名称</th>
               <th st-sort="type">勋章类型</th>
-              <th st-sort="intro">介绍</th>
-              <th st-sort="priority">优先级</th>
-              <th st-sort="available">是否启用</th>
+              <th st-sort="Medal_Info">介绍</th>
+              <th st-sort="Priority_Num">优先级</th>
+              <th st-sort="Is_Enable">是否启用</th>
               <th st-sort="">操作</th>
             </tr>
             <tr>
               <th></th>
-              <th><input st-search="medalName" placeholder="Search medalName" class="input-sm form-control search-input"
+              <th><input st-search="Medal_Name" placeholder="Search medalName" class="input-sm form-control search-input"
                          type="search"/></th>
               <th><input st-search="type" placeholder="Search Type" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input st-search="intro" placeholder="Search Intro" class="input-sm form-control search-input"
+              <th><input st-search="Medal_Info" placeholder="Search Medal_Info" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input st-search="priority" placeholder="Search Priority" class="input-sm form-control search-input" type="search"/>
+              <th><input st-search="Priority_Num" placeholder="Search Priority" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th><input st-search="available" placeholder="Search Available" class="input-sm form-control search-input" type="search"/>
+              <th><input st-search="Is_Enable" placeholder="Search Available" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th></th>
+              <th><a ui-sref="management.medalOperationList.add">新增</a></th>
             </tr>
             </thead>
             <tbody>
             <tr ng-repeat="item in smartTableData">
               <td class="table-id">{{item.id}}</td>
-              <td>{{item.medalName}}</td>
+              <td>{{item.Medal_Name}}</td>
               <td>{{item.type}}</td>
-              <td>{{item.intro}}</td>
-              <td>{{item.priority}}</td>
-              <td>{{item.available}}</td>
+              <td>{{item.Medal_Info}}</td>
+              <td>{{item.Priority_Num}}</td>
+              <td>{{item.Is_Enable}}</td>
               <td><a ui-sref="management.medalOperationList.modify({id: item.id})">修改</a></td>
             </tr>
             </tbody>

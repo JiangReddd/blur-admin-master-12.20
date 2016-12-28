@@ -24,6 +24,10 @@
           templateUrl: 'app/pages/management/medalOperationList/medalOperationList1.html',
           controller:'medalOperationListCtrl',
           title: '勋章列表',
+        }).state('management.medalOperationList.add', {
+          url: '/add',
+          templateUrl: 'app/pages/management/medalOperationList/medalOperationListAdd.html',
+          title: '勋章信息新增',
         }).state('management.medalOperationList.modify', {
           url: '/modify/:id',
           templateUrl: 'app/pages/management/medalOperationList/medalOperationListModify.html',

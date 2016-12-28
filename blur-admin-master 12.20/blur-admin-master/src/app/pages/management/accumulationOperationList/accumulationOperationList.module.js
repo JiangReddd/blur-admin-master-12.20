@@ -24,6 +24,10 @@
           templateUrl: 'app/pages/management/accumulationOperationList/accumulationOperationList1.html',
           controller:'accumulationOperationListCtrl',
           title: '积分列表',
+        }).state('management.accumulationOperationList.add', {
+          url: '/add',
+          templateUrl: 'app/pages/management/accumulationOperationList/accumulationOperationListAdd.html',
+          title: '积分信息新增',
         }).state('management.accumulationOperationList.modify', {
           url: '/modify/:id',
           templateUrl: 'app/pages/management/accumulationOperationList/accumulationOperationListModify.html',
