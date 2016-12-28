@@ -1,38 +1,38 @@
 [
       {
         "id": "1",
-        "Medal_Name": "笔杆子",
-        "Medal_EnName": "biganzi",
-        "Medal_Info": "@mdo",
-        "Medal_Type": "常规",
-        "Grow_Type" : "1",
-        "Image_Url" : "...",
-        "Highest_Level" : "12",
-        "Priority_Num": "100",
-        "Is_Enable": "1"
+        "medalName": "笔杆子",
+        "medalEnName": "biganzi",
+        "medalInfo": "@mdo",
+        "medalType": "常规",
+        "growType" : "1",
+        "imageUrl" : "...",
+        "highestLevel" : "12",
+        "priorityNum": "100",
+        "isEnable": "1"
       },
       {
         "id": "2",
-        "Medal_Name": "金手指",
-        "Medal_EnName": "jinshouzhi",
-        "Medal_Info": "@fat",
-        "Medal_Type": "常规",
-        "Grow_Type" : "1",
-        "Image_Url" : "...",
-        "Highest_Level" : "1",
-        "Priority_Num": "111",
-        "Is_Enable": "0"
+        "medalName": "金手指",
+        "medalEnName": "jinshouzhi",
+        "medalInfo": "@fat",
+        "medalType": "常规",
+        "growType" : "1",
+        "imageUrl" : "...",
+        "highestLevel" : "1",
+        "priorityNum": "111",
+        "isEnable": "0"
       },
       {
         "id": "3",
-        "Medal_Name": "铁算盘",
-        "Medal_EnName": "tiesuanpan",
-        "Medal_Info": "@fat",
-        "Medal_Type": "职业生涯",
-        "Grow_Type" : "0",
-        "Image_Url" : "...",
-        "Highest_Level" : "1",
-        "Priority_Num": "230",
-        "Is_Enable": "1"
+        "medalName": "铁算盘",
+        "medalEnName": "tiesuanpan",
+        "medalInfo": "@fat",
+        "medalType": "职业生涯",
+        "growType" : "0",
+        "imageUrl" : "...",
+        "highestLevel" : "1",
+        "priorityNum": "230",
+        "isEnable": "1"
       }
     ]

@@ -19,11 +19,11 @@
 			vm.mail = messages.filter(function(m) {
 				return m.id == $stateParams.id;
 			})[0]; 
-			if(vm.mail.isenable == "启用"){
-				$("#isenable").attr("checked",true);
+			if(vm.mail.isEnable == "启用"){
+				$("#isEnable").attr("checked",true);
 			}
 			else{
-				$("#isenable1").attr("checked",true);
+				$("#isEnable1").attr("checked",true);
 			}; 
 		});
 		vm.label = $stateParams.label;

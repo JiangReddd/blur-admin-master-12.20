@@ -16,22 +16,22 @@
     $scope.smartTableData = [
       {
         "id": "1",
-        "credititem": "笔杆子",
-        "isenable": "1"
+        "creditItem": "笔杆子",
+        "isEnable": "1"
       },
       {
         "id": "2",
-        "credititem": "金手指",
-        "isenable": "0"
+        "creditItem": "金手指",
+        "isEnable": "0"
       }
     ];
 
     $.each($scope.smartTableData,function(i){
-        if($scope.smartTableData[i].isenable == "1"){
-          $scope.smartTableData[i].isenable = "启用";
+        if($scope.smartTableData[i].isEnable == "1"){
+          $scope.smartTableData[i].isEnable = "启用";
         }
         else{
-          $scope.smartTableData[i].isenable = "停用";
+          $scope.smartTableData[i].isEnable = "停用";
         }
     });
 

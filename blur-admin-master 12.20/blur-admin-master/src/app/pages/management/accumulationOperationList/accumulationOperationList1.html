@@ -15,15 +15,15 @@
             <thead>
             <tr class="sortable ">
               <th class="table-id" st-sort="id" st-sort-default="true">#</th>
-              <th st-sort="credititem">积分名称</th>
-              <th st-sort="isenable">是否启用</th>
+              <th st-sort="creditItem">积分名称</th>
+              <th st-sort="isEnable">是否启用</th>
               <th st-sort="">操作</th>
             </tr>
             <tr>
               <th></th>
-              <th><input st-search="credititem" placeholder="Search credititem" class="input-sm form-control search-input"
+              <th><input st-search="creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input st-search="isenable" placeholder="Search isenable" class="input-sm form-control search-input" type="search"/>
+              <th><input st-search="isEnable" placeholder="Search isEnable" class="input-sm form-control search-input" type="search"/>
               </th>
               <th><a ui-sref="management.accumulationOperationList.add">新增</a></th>
             </tr>
@@ -31,8 +31,8 @@
             <tbody>
             <tr ng-repeat="item in smartTableData">
               <td class="table-id">{{item.id}}</td>
-              <td>{{item.credititem}}</td>
-              <td>{{item.isenable}}</td>
+              <td>{{item.creditItem}}</td>
+              <td>{{item.isEnable}}</td>
               <td><a ui-sref="management.accumulationOperationList.modify({id: item.id})">修改</a></td>
             </tr>
             </tbody>

@@ -1,12 +1,12 @@
 [
       {
         "id": "1",
-        "credititem": "笔杆子",
-        "isenable": "启用"
+        "creditItem": "笔杆子",
+        "isEnable": "启用"
       },
       {
         "id": "2",
-        "credititem": "金手指",
-        "isenable": "停用"
+        "creditItem": "金手指",
+        "isEnable": "停用"
       }
     ]
