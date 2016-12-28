@@ -11,668 +11,553 @@
   /** @ngInject */
   function accumulationReleaseCtrl($scope, $filter, editableOptions, editableThemes) {
 
-    $scope.smartTablePageSize = 10;
+    $scope.smartTablePupdateUserSize = 10;
 
     $scope.smartTableData = [
       {
         id: 1,
-        firstName: 'Mark',
-        lastName: 'Otto',
-        username: '@mdo',
-        email: 'mdo@gmail.com',
-        age: '28'
+        userName: 'Mark',
+        userId: '@mdo',
+        creditItem: '加班积分',
+        updateUser: '张三',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 2,
-        firstName: 'Jacob',
-        lastName: 'Thornton',
-        username: '@fat',
-        email: 'fat@yandex.ru',
-        age: '45'
+        userName: 'Jacob',
+        userId: '@fat',
+        creditItem: '加班积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 3,
-        firstName: 'Larry',
-        lastName: 'Bird',
-        username: '@twitter',
-        email: 'twitter@outlook.com',
-        age: '18'
+        userName: 'Larry',
+        userId: '@twitter',
+        creditItem: '加班积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 4,
-        firstName: 'John',
-        lastName: 'Snow',
-        username: '@snow',
-        email: 'snow@gmail.com',
-        age: '20'
+        userName: 'John',
+        userId: '@snow',
+        creditItem: '假日加班积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 5,
-        firstName: 'Jack',
-        lastName: 'Sparrow',
-        username: '@jack',
-        email: 'jack@yandex.ru',
-        age: '30'
+        userName: 'Jack',
+        userId: '@jack',
+        creditItem: '加班积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 6,
-        firstName: 'Ann',
-        lastName: 'Smith',
-        username: '@ann',
-        email: 'ann@gmail.com',
-        age: '21'
+        userName: 'Ann',
+        userId: '@ann',
+        creditItem: '加班积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 7,
-        firstName: 'Barbara',
-        lastName: 'Black',
-        username: '@barbara',
-        email: 'barbara@yandex.ru',
-        age: '43'
+        userName: 'Barbara',
+        userId: '@barbara',
+        creditItem: '奖励积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 8,
-        firstName: 'Sevan',
-        lastName: 'Bagrat',
-        username: '@sevan',
-        email: 'sevan@outlook.com',
-        age: '13'
+        userName: 'Sevan',
+        userId: '@sevan',
+        creditItem: '奖励积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 9,
-        firstName: 'Ruben',
-        lastName: 'Vardan',
-        username: '@ruben',
-        email: 'ruben@gmail.com',
-        age: '22'
+        userName: 'Ruben',
+        userId: '@ruben',
+        creditItem: '奖励积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 10,
-        firstName: 'Karen',
-        lastName: 'Sevan',
-        username: '@karen',
-        email: 'karen@yandex.ru',
-        age: '33'
+        userName: 'Karen',
+        userId: '@karen',
+        creditItem: '奖励积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 11,
-        firstName: 'Mark',
-        lastName: 'Otto',
-        username: '@mark',
-        email: 'mark@gmail.com',
-        age: '38'
+        userName: 'Mark',
+        userId: '@mark',
+        creditItem: '奖励积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 12,
-        firstName: 'Jacob',
-        lastName: 'Thornton',
-        username: '@jacob',
-        email: 'jacob@yandex.ru',
-        age: '48'
+        userName: 'Jacob',
+        userId: '@jacob',
+        creditItem: '奖励积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 13,
-        firstName: 'Haik',
-        lastName: 'Hakob',
-        username: '@haik',
-        email: 'haik@outlook.com',
-        age: '48'
+        userName: 'Haik',
+        userId: '@haik',
+        creditItem: '奖励积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 14,
-        firstName: 'Garegin',
-        lastName: 'Jirair',
-        username: '@garegin',
-        email: 'garegin@gmail.com',
-        age: '40'
+        userName: 'Garegin',
+        userId: '@garegin',
+        creditItem: '奖励积分m',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         id: 15,
-        firstName: 'Krikor',
-        lastName: 'Bedros',
-        username: '@krikor',
-        email: 'krikor@yandex.ru',
-        age: '32'
+        userName: 'Krikor',
+        userId: '@krikor',
+        creditItem: '奖励积分',
+        updateUser: '黄伟文',
+        creditScore: '5' ,
+        month: '2016.11'
       },
       {
         "id": 16,
-        "firstName": "Francisca",
-        "lastName": "Brady",
-        "username": "@Gibson",
-        "email": "franciscagibson@comtours.com",
-        "age": 11
+        "userName": "Francisca",
+        "userId": "@Gibson",
+        "creditItem": "franciscagibson@comtours.com",
+        "updateUser": 11 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 17,
-        "firstName": "Tillman",
-        "lastName": "Figueroa",
-        "username": "@Snow",
-        "email": "tillmansnow@comtours.com",
-        "age": 34
+        "userName": "Tillman",
+        "userId": "@Snow",
+        "creditItem": "tillmansnow@comtours.com",
+        "updateUser": 34 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 18,
-        "firstName": "Jimenez",
-        "lastName": "Morris",
-        "username": "@Bryant",
-        "email": "jimenezbryant@comtours.com",
-        "age": 45
+        "userName": "Jimenez",
+        "userId": "@Bryant",
+        "creditItem": "jimenezbryant@comtours.com",
+        "updateUser": 45 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 19,
-        "firstName": "Sandoval",
-        "lastName": "Jacobson",
-        "username": "@Mcbride",
-        "email": "sandovalmcbride@comtours.com",
-        "age": 32
+        "userName": "Sandoval",
+        "userId": "@Mcbride",
+        "creditItem": "sandovalmcbride@comtours.com",
+        "updateUser": 32 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 20,
-        "firstName": "Griffin",
-        "lastName": "Torres",
-        "username": "@Charles",
-        "email": "griffincharles@comtours.com",
-        "age": 19
+        "userName": "Griffin",
+        "userId": "@Charles",
+        "creditItem": "griffincharles@comtours.com",
+        "updateUser": 19 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 21,
-        "firstName": "Cora",
-        "lastName": "Parker",
-        "username": "@Caldwell",
-        "email": "coracaldwell@comtours.com",
-        "age": 27
+        "userName": "Cora",
+        "userId": "@Caldwell",
+        "creditItem": "coracaldwell@comtours.com",
+        "updateUser": 27 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 22,
-        "firstName": "Cindy",
-        "lastName": "Bond",
-        "username": "@Velez",
-        "email": "cindyvelez@comtours.com",
-        "age": 24
+        "userName": "Cindy",
+        "userId": "@Velez",
+        "creditItem": "cindyvelez@comtours.com",
+        "updateUser": 24 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 23,
-        "firstName": "Frieda",
-        "lastName": "Tyson",
-        "username": "@Craig",
-        "email": "friedacraig@comtours.com",
-        "age": 45
+        "userName": "Frieda",
+        "userId": "@Craig",
+        "creditItem": "friedacraig@comtours.com",
+        "updateUser": 45 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 24,
-        "firstName": "Cote",
-        "lastName": "Holcomb",
-        "username": "@Rowe",
-        "email": "coterowe@comtours.com",
-        "age": 20
+        "userName": "Cote",
+        "userId": "@Rowe",
+        "creditItem": "coterowe@comtours.com",
+        "updateUser": 20 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 25,
-        "firstName": "Trujillo",
-        "lastName": "Mejia",
-        "username": "@Valenzuela",
-        "email": "trujillovalenzuela@comtours.com",
-        "age": 16
+        "userName": "Trujillo",
+        "userId": "@Valenzuela",
+        "creditItem": "trujillovalenzuela@comtours.com",
+        "updateUser": 16 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 26,
-        "firstName": "Pruitt",
-        "lastName": "Shepard",
-        "username": "@Sloan",
-        "email": "pruittsloan@comtours.com",
-        "age": 44
+        "userName": "Pruitt",
+        "userId": "@Sloan",
+        "creditItem": "pruittsloan@comtours.com",
+        "updateUser": 44 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 27,
-        "firstName": "Sutton",
-        "lastName": "Ortega",
-        "username": "@Black",
-        "email": "suttonblack@comtours.com",
-        "age": 42
+        "userName": "Sutton",
+        "userId": "@Black",
+        "creditItem": "suttonblack@comtours.com",
+        "updateUser": 42 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 28,
-        "firstName": "Marion",
-        "lastName": "Heath",
-        "username": "@Espinoza",
-        "email": "marionespinoza@comtours.com",
-        "age": 47
+        "userName": "Marion",
+        "userId": "@Espinoza",
+        "creditItem": "marionespinoza@comtours.com",
+        "updateUser": 47 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 29,
-        "firstName": "Newman",
-        "lastName": "Hicks",
-        "username": "@Keith",
-        "email": "newmankeith@comtours.com",
-        "age": 15
+        "userName": "Newman",
+        "userId": "@Keith",
+        "creditItem": "newmankeith@comtours.com",
+        "updateUser": 15 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 30,
-        "firstName": "Boyle",
-        "lastName": "Larson",
-        "username": "@Summers",
-        "email": "boylesummers@comtours.com",
-        "age": 32
+        "userName": "Boyle",
+        "userId": "@Summers",
+        "creditItem": "boylesummers@comtours.com",
+        "updateUser": 32 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 31,
-        "firstName": "Haynes",
-        "lastName": "Vinson",
-        "username": "@Mckenzie",
-        "email": "haynesmckenzie@comtours.com",
-        "age": 15
+        "userName": "Haynes",
+        "userId": "@Mckenzie",
+        "creditItem": "haynesmckenzie@comtours.com",
+        "updateUser": 15 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 32,
-        "firstName": "Miller",
-        "lastName": "Acosta",
-        "username": "@Young",
-        "email": "milleryoung@comtours.com",
-        "age": 55
+        "userName": "Miller",
+        "userId": "@Young",
+        "creditItem": "milleryoung@comtours.com",
+        "updateUser": 55 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 33,
-        "firstName": "Johnston",
-        "lastName": "Brown",
-        "username": "@Knight",
-        "email": "johnstonknight@comtours.com",
-        "age": 29
+        "userName": "Johnston",
+        "userId": "@Knight",
+        "creditItem": "johnstonknight@comtours.com",
+        "updateUser": 29 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 34,
-        "firstName": "Lena",
-        "lastName": "Pitts",
-        "username": "@Forbes",
-        "email": "lenaforbes@comtours.com",
-        "age": 25
+        "userName": "Lena",
+        "userId": "@Forbes",
+        "creditItem": "lenaforbes@comtours.com",
+        "updateUser": 25 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 35,
-        "firstName": "Terrie",
-        "lastName": "Kennedy",
-        "username": "@Branch",
-        "email": "terriebranch@comtours.com",
-        "age": 37
+        "userName": "Terrie",
+        "userId": "@Branch",
+        "creditItem": "terriebranch@comtours.com",
+        "updateUser": 37 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 36,
-        "firstName": "Louise",
-        "lastName": "Aguirre",
-        "username": "@Kirby",
-        "email": "louisekirby@comtours.com",
-        "age": 44
+        "userName": "Louise",
+        "userId": "@Kirby",
+        "creditItem": "louisekirby@comtours.com",
+        "updateUser": 44 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 37,
-        "firstName": "David",
-        "lastName": "Patton",
-        "username": "@Sanders",
-        "email": "davidsanders@comtours.com",
-        "age": 26
+        "userName": "David",
+        "userId": "@Sanders",
+        "creditItem": "davidsanders@comtours.com",
+        "updateUser": 26 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 38,
-        "firstName": "Holden",
-        "lastName": "Barlow",
-        "username": "@Mckinney",
-        "email": "holdenmckinney@comtours.com",
-        "age": 11
+        "userName": "Holden",
+        "userId": "@Mckinney",
+        "creditItem": "holdenmckinney@comtours.com",
+        "updateUser": 11 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 39,
-        "firstName": "Baker",
-        "lastName": "Rivera",
-        "username": "@Montoya",
-        "email": "bakermontoya@comtours.com",
-        "age": 47
+        "userName": "Baker",
+        "userId": "@Montoya",
+        "creditItem": "bakermontoya@comtours.com",
+        "updateUser": 47 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 40,
-        "firstName": "Belinda",
-        "lastName": "Lloyd",
-        "username": "@Calderon",
-        "email": "belindacalderon@comtours.com",
-        "age": 21
+        "userName": "Belinda",
+        "userId": "@Calderon",
+        "creditItem": "belindacalderon@comtours.com",
+        "updateUser": 21 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 41,
-        "firstName": "Pearson",
-        "lastName": "Patrick",
-        "username": "@Clements",
-        "email": "pearsonclements@comtours.com",
-        "age": 42
+        "userName": "Pearson",
+        "userId": "@Clements",
+        "creditItem": "pearsonclements@comtours.com",
+        "updateUser": 42 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 42,
-        "firstName": "Alyce",
-        "lastName": "Mckee",
-        "username": "@Daugherty",
-        "email": "alycedaugherty@comtours.com",
-        "age": 55
+        "userName": "Alyce",
+        "userId": "@Daugherty",
+        "creditItem": "alycedaugherty@comtours.com",
+        "updateUser": 55 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 43,
-        "firstName": "Valencia",
-        "lastName": "Spence",
-        "username": "@Olsen",
-        "email": "valenciaolsen@comtours.com",
-        "age": 20
+        "userName": "Valencia",
+        "userId": "@Olsen",
+        "creditItem": "valenciaolsen@comtours.com",
+        "updateUser": 20 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 44,
-        "firstName": "Leach",
-        "lastName": "Holcomb",
-        "username": "@Humphrey",
-        "email": "leachhumphrey@comtours.com",
-        "age": 28
+        "userName": "Leach",
+        "userId": "@Humphrey",
+        "creditItem": "leachhumphrey@comtours.com",
+        "updateUser": 28 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 45,
-        "firstName": "Moss",
-        "lastName": "Baxter",
-        "username": "@Fitzpatrick",
-        "email": "mossfitzpatrick@comtours.com",
-        "age": 51
+        "userName": "Moss",
+        "userId": "@Fitzpatrick",
+        "creditItem": "mossfitzpatrick@comtours.com",
+        "updateUser": 51 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 46,
-        "firstName": "Jeanne",
-        "lastName": "Cooke",
-        "username": "@Ward",
-        "email": "jeanneward@comtours.com",
-        "age": 59
+        "userName": "Jeanne",
+        "userId": "@Ward",
+        "creditItem": "jeanneward@comtours.com",
+        "updateUser": 59 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 47,
-        "firstName": "Wilma",
-        "lastName": "Briggs",
-        "username": "@Kidd",
-        "email": "wilmakidd@comtours.com",
-        "age": 53
+        "userName": "Wilma",
+        "userId": "@Kidd",
+        "creditItem": "wilmakidd@comtours.com",
+        "updateUser": 53 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 48,
-        "firstName": "Beatrice",
-        "lastName": "Perry",
-        "username": "@Gilbert",
-        "email": "beatricegilbert@comtours.com",
-        "age": 39
+        "userName": "Beatrice",
+        "userId": "@Gilbert",
+        "creditItem": "beatricegilbert@comtours.com",
+        "updateUser": 39 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 49,
-        "firstName": "Whitaker",
-        "lastName": "Hyde",
-        "username": "@Mcdonald",
-        "email": "whitakermcdonald@comtours.com",
-        "age": 35
+        "userName": "Whitaker",
+        "userId": "@Mcdonald",
+        "creditItem": "whitakermcdonald@comtours.com",
+        "updateUser": 35 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 50,
-        "firstName": "Rebekah",
-        "lastName": "Duran",
-        "username": "@Gross",
-        "email": "rebekahgross@comtours.com",
-        "age": 40
+        "userName": "Rebekah",
+        "userId": "@Gross",
+        "creditItem": "rebekahgross@comtours.com",
+        "updateUser": 40 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 51,
-        "firstName": "Earline",
-        "lastName": "Mayer",
-        "username": "@Woodward",
-        "email": "earlinewoodward@comtours.com",
-        "age": 52
+        "userName": "Earline",
+        "userId": "@Woodward",
+        "creditItem": "earlinewoodward@comtours.com",
+        "updateUser": 52 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 52,
-        "firstName": "Moran",
-        "lastName": "Baxter",
-        "username": "@Johns",
-        "email": "moranjohns@comtours.com",
-        "age": 20
+        "userName": "Moran",
+        "userId": "@Johns",
+        "creditItem": "moranjohns@comtours.com",
+        "updateUser": 20 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 53,
-        "firstName": "Nanette",
-        "lastName": "Hubbard",
-        "username": "@Cooke",
-        "email": "nanettecooke@comtours.com",
-        "age": 55
+        "userName": "Nanette",
+        "userId": "@Cooke",
+        "creditItem": "nanettecooke@comtours.com",
+        "updateUser": 55 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 54,
-        "firstName": "Dalton",
-        "lastName": "Walker",
-        "username": "@Hendricks",
-        "email": "daltonhendricks@comtours.com",
-        "age": 25
+        "userName": "Dalton",
+        "userId": "@Hendricks",
+        "creditItem": "daltonhendricks@comtours.com",
+        "updateUser": 25 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 55,
-        "firstName": "Bennett",
-        "lastName": "Blake",
-        "username": "@Pena",
-        "email": "bennettpena@comtours.com",
-        "age": 13
+        "userName": "Bennett",
+        "userId": "@Pena",
+        "creditItem": "bennettpena@comtours.com",
+        "updateUser": 13 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 56,
-        "firstName": "Kellie",
-        "lastName": "Horton",
-        "username": "@Weiss",
-        "email": "kellieweiss@comtours.com",
-        "age": 48
+        "userName": "Kellie",
+        "userId": "@Weiss",
+        "creditItem": "kellieweiss@comtours.com",
+        "updateUser": 48 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 57,
-        "firstName": "Hobbs",
-        "lastName": "Talley",
-        "username": "@Sanford",
-        "email": "hobbssanford@comtours.com",
-        "age": 28
+        "userName": "Hobbs",
+        "userId": "@Sanford",
+        "creditItem": "hobbssanford@comtours.com",
+        "updateUser": 28 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 58,
-        "firstName": "Mcguire",
-        "lastName": "Donaldson",
-        "username": "@Roman",
-        "email": "mcguireroman@comtours.com",
-        "age": 38
+        "userName": "Mcguire",
+        "userId": "@Roman",
+        "creditItem": "mcguireroman@comtours.com",
+        "updateUser": 38 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 59,
-        "firstName": "Rodriquez",
-        "lastName": "Saunders",
-        "username": "@Harper",
-        "email": "rodriquezharper@comtours.com",
-        "age": 20
+        "userName": "Rodriquez",
+        "userId": "@Harper",
+        "creditItem": "rodriquezharper@comtours.com",
+        "updateUser": 20 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       },
       {
         "id": 60,
-        "firstName": "Lou",
-        "lastName": "Conner",
-        "username": "@Sanchez",
-        "email": "lousanchez@comtours.com",
-        "age": 16
+        "userName": "Lou",
+        "userId": "@Sanchez",
+        "creditItem": "lousanchez@comtours.com",
+        "updateUser": 16 ,
+        "creditScore": 5 ,
+        "month":"2016.11"
       }
     ];
 
     $scope.editableTableData = $scope.smartTableData.slice(0, 36);
 
-    $scope.peopleTableData = [
-      {
-        id: 1,
-        firstName: 'Mark',
-        lastName: 'Otto',
-        username: '@mdo',
-        email: 'mdo@gmail.com',
-        age: '28',
-        status: 'info'
-      },
-      {
-        id: 2,
-        firstName: 'Jacob',
-        lastName: 'Thornton',
-        username: '@fat',
-        email: 'fat@yandex.ru',
-        age: '45',
-        status: 'primary'
-      },
-      {
-        id: 3,
-        firstName: 'Larry',
-        lastName: 'Bird',
-        username: '@twitter',
-        email: 'twitter@outlook.com',
-        age: '18',
-        status: 'success'
-      },
-      {
-        id: 4,
-        firstName: 'John',
-        lastName: 'Snow',
-        username: '@snow',
-        email: 'snow@gmail.com',
-        age: '20',
-        status: 'danger'
-      },
-      {
-        id: 5,
-        firstName: 'Jack',
-        lastName: 'Sparrow',
-        username: '@jack',
-        email: 'jack@yandex.ru',
-        age: '30',
-        status: 'warning'
-      }
-    ];
-
-    $scope.metricsTableData = [
-      {
-        image: 'app/browsers/chrome.svg',
-        browser: 'Google Chrome',
-        visits: '10,392',
-        isVisitsUp: true,
-        purchases: '4,214',
-        isPurchasesUp: true,
-        percent: '45%',
-        isPercentUp: true
-      },
-      {
-        image: 'app/browsers/firefox.svg',
-        browser: 'Mozilla Firefox',
-        visits: '7,873',
-        isVisitsUp: true,
-        purchases: '3,031',
-        isPurchasesUp: false,
-        percent: '28%',
-        isPercentUp: true
-      },
-      {
-        image: 'app/browsers/ie.svg',
-        browser: 'Internet Explorer',
-        visits: '5,890',
-        isVisitsUp: false,
-        purchases: '2,102',
-        isPurchasesUp: false,
-        percent: '17%',
-        isPercentUp: false
-      },
-      {
-        image: 'app/browsers/safari.svg',
-        browser: 'Safari',
-        visits: '4,001',
-        isVisitsUp: false,
-        purchases: '1,001',
-        isPurchasesUp: false,
-        percent: '14%',
-        isPercentUp: true
-      },
-      {
-        image: 'app/browsers/opera.svg',
-        browser: 'Opera',
-        visits: '1,833',
-        isVisitsUp: true,
-        purchases: '83',
-        isPurchasesUp: true,
-        percent: '5%',
-        isPercentUp: false
-      }
-    ];
-
-    $scope.users = [
-      {
-        "id": 1,
-        "name": "Esther Vang",
-        "status": 4,
-        "group": 3
-      },
-      {
-        "id": 2,
-        "name": "Leah Freeman",
-        "status": 3,
-        "group": 1
-      },
-      {
-        "id": 3,
-        "name": "Mathews Simpson",
-        "status": 3,
-        "group": 2
-      },
-      {
-        "id": 4,
-        "name": "Buckley Hopkins",
-        "group": 4
-      },
-      {
-        "id": 5,
-        "name": "Buckley Schwartz",
-        "status": 1,
-        "group": 1
-      },
-      {
-        "id": 6,
-        "name": "Mathews Hopkins",
-        "status": 4,
-        "group": 2
-      },
-      {
-        "id": 7,
-        "name": "Leah Vang",
-        "status": 4,
-        "group": 1
-      },
-      {
-        "id": 8,
-        "name": "Vang Schwartz",
-        "status": 4,
-        "group": 2
-      },
-      {
-        "id": 9,
-        "name": "Hopkin Esther",
-        "status": 1,
-        "group": 2
-      },
-      {
-        "id": 10,
-        "name": "Mathews Schwartz",
-        "status": 1,
-        "group": 3
-      }
-    ];
-
-    $scope.statuses = [
-      {value: 1, text: 'Good'},
-      {value: 2, text: 'Awesome'},
-      {value: 3, text: 'Excellent'},
-    ];
-
-    $scope.groups = [
-      {id: 1, text: 'user'},
-      {id: 2, text: 'customer'},
-      {id: 3, text: 'vip'},
-      {id: 4, text: 'admin'}
-    ];
 
     $scope.showGroup = function(user) {
       if(user.group && $scope.groups.length) {
