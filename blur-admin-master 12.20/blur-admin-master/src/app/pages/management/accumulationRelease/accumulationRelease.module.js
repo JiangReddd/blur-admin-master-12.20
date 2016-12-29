@@ -15,6 +15,7 @@
           url: '/accumulationRelease',
           templateUrl: 'app/pages/management/accumulationRelease/accumulationRelease.html',
           controller:'accumulationReleaseCtrl',
+          controllerAs:'controller',
           title: '积分发放记录',
           sidebarMeta: {
             icon: 'ion-android-home',

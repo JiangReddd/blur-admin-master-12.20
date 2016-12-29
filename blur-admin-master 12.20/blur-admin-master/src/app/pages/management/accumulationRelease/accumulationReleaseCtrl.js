@@ -11,13 +11,14 @@
   /** @ngInject */
   function accumulationReleaseCtrl($scope, $filter, editableOptions, editableThemes,$http) {
 
-      
+      var vm = this;
       $http.get('app/pages/management/accumulationRelease/accumulationRelease.json').success(function(res) {
-        $scope.smartTablePupdateUserSize = 10;
-        $scope.smartTableData = res ;
+        vm.smartTablePupdateUserSize = 10;
+        vm.smartTableData = res ;
         console.log(res);
-        console.log($scope.smartTableData);
+        console.log(vm.smartTableData);
     });
+        console.log(vm.smartTableData);
    
 
 
