@@ -15,6 +15,7 @@
           url: '/medalRelease',
           templateUrl: 'app/pages/management/medalRelease/medalRelease.html',
           controller:'medalReleaseCtrl',
+          controllerAs:'releaseCtrl',
           title: '勋章发放记录',
           sidebarMeta: {
             icon: 'ion-android-home',
