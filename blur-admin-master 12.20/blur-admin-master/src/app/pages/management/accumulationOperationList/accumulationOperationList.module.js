@@ -23,6 +23,7 @@
           url: '/list',
           templateUrl: 'app/pages/management/accumulationOperationList/accumulationOperationList1.html',
           controller:'accumulationOperationListCtrl',
+          controllerAs:'OperationListCtrl',
           title: '积分列表',
         }).state('management.accumulationOperationList.add', {
           url: '/add',

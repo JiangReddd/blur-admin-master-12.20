@@ -19,10 +19,10 @@
 			vm.mail = messages.filter(function(m) {
 				return m.id == $stateParams.id;
 			})[0]; 
-			if(vm.mail.isEnable == "启用"){
+			if(vm.mail.isEnable == "1"){
 				$("#isEnable").attr("checked",true);
 			}
-			else{
+			if(vm.mail.isEnable == "0"){
 				$("#isEnable1").attr("checked",true);
 			}; 
 		});

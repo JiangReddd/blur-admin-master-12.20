@@ -2,11 +2,11 @@
       {
         "id": "1",
         "creditItem": "笔杆子",
-        "isEnable": "启用"
+        "isEnable": "1"
       },
       {
         "id": "2",
         "creditItem": "金手指",
-        "isEnable": "停用"
+        "isEnable": "0"
       }
     ]

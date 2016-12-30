@@ -4,32 +4,25 @@
     <div class="col-md-12">
       <div ba-panel ba-panel-title="勋章" ba-panel-class="with-scroll">
         <div class="horizontal-scroll">
-          <div class="form-group select-page-size-wrap ">
-            <label>行/页
-              <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
-                      ng-model="smartTablePageSize" ng-options="i for i in [5,10,15,20,25]">
-              </select>
-            </label>
-          </div>
-          <table class="table" st-table="smartTableData">
+          <table class="table">
             <thead>
             <tr class="sortable ">
-              <th class="table-id" st-sort="id" st-sort-default="true">#</th>
-              <th st-sort="creditItem">积分名称</th>
-              <th st-sort="isEnable">是否启用</th>
-              <th st-sort="">操作</th>
+              <th class="table-id">#</th>
+              <th>积分名称</th>
+              <th>是否启用</th>
+              <th>操作</th>
             </tr>
             <tr>
               <th></th>
-              <th><input st-search="creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
+              <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input st-search="isEnable" placeholder="Search isEnable" class="input-sm form-control search-input" type="search"/>
+              <th><input ng-model="search.isEnable" placeholder="Search isEnable" class="input-sm form-control search-input" type="search"/>
               </th>
               <th><a ui-sref="management.accumulationOperationList.add">新增</a></th>
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="item in smartTableData">
+            <tr ng-repeat="item in OperationListCtrl.smartTableData | filter:search:strict">
               <td class="table-id">{{item.id}}</td>
               <td>{{item.creditItem}}</td>
               <td>{{item.isEnable}}</td>

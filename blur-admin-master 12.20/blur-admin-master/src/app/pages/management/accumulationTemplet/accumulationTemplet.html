@@ -24,18 +24,20 @@
               <div class="row ng-scope">
               <div class="progress-buttons-container default-text">
                 <div class="row">
-                  <section class="col-md-12 col-lg-6">
-                    <span class="button-title">上传模板【带用户数据】</span>
-                        <div class="uploader blue">
-                          <input type="text" class="filename" readonly/>
-                          <input type="button" name="file" class="button" value="选择文件"/>
-                          <input type="file" size="30"/>
-                        </div>
-                  </section>
-                  <section class="col-md-12 col-lg-6">
-                    <span class="button-title">上传</span>
-                    <button progress-button="progressFunction()" pb-style="rotate-back" class="btn btn-success">上传</button>
-                  </section>
+                  <form ng-submit=""  method="post" enctype="multipart/form-data">
+                    <section class="col-md-12 col-lg-6">
+                      <span class="button-title">上传模板【带用户数据】</span>
+                          <div class="uploader blue">
+                            <input type="text" class="filename" readonly/>
+                            <input type="button" name="file" class="button" value="选择文件"/>
+                            <input type="file" size="30"/>
+                          </div>
+                    </section>
+                    <section class="col-md-12 col-lg-6">
+                      <span class="button-title">上传</span>
+                      <button type="submit" progress-button="progressFunction()" pb-style="rotate-back" class="btn btn-success">上传</button>
+                    </section>
+                  </form>
                 </div>
               </div>
             </div>

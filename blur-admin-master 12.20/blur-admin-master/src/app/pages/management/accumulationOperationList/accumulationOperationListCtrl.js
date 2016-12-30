@@ -9,69 +9,40 @@
       .controller('accumulationOperationListCtrl', accumulationOperationListCtrl);
 
   /** @ngInject */
-  function accumulationOperationListCtrl($scope, $filter, editableOptions, editableThemes) {
+  function accumulationOperationListCtrl($http, $q, $filter, editableOptions, editableThemes) {
 
-    $scope.smartTablePageSize = 10;
+        var vm = this;
 
-    $scope.smartTableData = [
-      {
-        "id": "1",
-        "creditItem": "笔杆子",
-        "isEnable": "1"
-      },
-      {
-        "id": "2",
-        "creditItem": "金手指",
-        "isEnable": "0"
-      }
-    ];
+        function getJson(url, target)
+        {
+            var deferred = $q.defer();
+            $http.get(url)
+            .success(function (d)
+            {
+                console.log(d);
+                $.each(d,function(i){
+                        if(d[i].isEnable == "1"){
+                          d[i].isEnable = "启用";
+                        }
+                        if(d[i].isEnable == "0"){
+                          d[i].isEnable = "停用";
+                        }
+                    });
+                vm[target] = d;
 
-    $.each($scope.smartTableData,function(i){
-        if($scope.smartTableData[i].isEnable == "1"){
-          $scope.smartTableData[i].isEnable = "启用";
+                deferred.resolve();
+            }
+            )
+
+            return deferred.promise;
         }
-        else{
-          $scope.smartTableData[i].isEnable = "停用";
-        }
-    });
 
-    $scope.editableTableData = $scope.smartTableData.slice(0, 36);
+        vm.smartTablePageSize = 10;
 
-
-    $scope.showGroup = function(user) {
-      if(user.group && $scope.groups.length) {
-        var selected = $filter('filter')($scope.groups, {id: user.group});
-        return selected.length ? selected[0].text : 'Not set';
-      } else return 'Not set'
-    };
-
-    $scope.showStatus = function(user) {
-      var selected = [];
-      if(user.status) {
-        selected = $filter('filter')($scope.statuses, {value: user.status});
-      }
-      return selected.length ? selected[0].text : 'Not set';
-    };
-
-
-    $scope.removeUser = function(index) {
-      $scope.users.splice(index, 1);
-    };
-
-    $scope.addUser = function() {
-      $scope.inserted = {
-        id: $scope.users.length+1,
-        name: '',
-        status: null,
-        group: null
-      };
-      $scope.users.push($scope.inserted);
-    };
-
-    editableOptions.theme = 'bs3';
-    editableThemes['bs3'].submitTpl = '<button type="submit" class="btn btn-primary btn-with-icon"><i class="ion-checkmark-round"></i></button>';
-    editableThemes['bs3'].cancelTpl = '<button type="button" ng-click="$form.$cancel()" class="btn btn-default btn-with-icon"><i class="ion-close-round"></i></button>';
-
+        getJson('app/pages/management/accumulationOperationList/accumulationOperationList.json', 'smartTableData').then(function ()
+        {
+           }
+        );
 
   }
 

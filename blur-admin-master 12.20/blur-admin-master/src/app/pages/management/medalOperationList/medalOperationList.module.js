@@ -23,6 +23,7 @@
           url: '/list',
           templateUrl: 'app/pages/management/medalOperationList/medalOperationList1.html',
           controller:'medalOperationListCtrl',
+          controllerAs:'OperationListCtrl',
           title: '勋章列表',
         }).state('management.medalOperationList.add', {
           url: '/add',

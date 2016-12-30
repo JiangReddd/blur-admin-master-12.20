@@ -9,16 +9,32 @@
       .controller('accumulationReleaseCtrl', accumulationReleaseCtrl);
 
   /** @ngInject */
-  function accumulationReleaseCtrl($scope, $filter, editableOptions, editableThemes,$http) {
+  function accumulationReleaseCtrl($http, $q, $filter, editableOptions, editableThemes) {
 
       var vm = this;
-      $http.get('app/pages/management/accumulationRelease/accumulationRelease.json').success(function(res) {
-        vm.smartTablePupdateUserSize = 10;
-        vm.smartTableData = res ;
-        console.log(res);
-        console.log(vm.smartTableData);
-    });
-        console.log(vm.smartTableData);
+
+              function getJson(url, target)
+              {
+                  var deferred = $q.defer();
+                  $http.get(url)
+                  .success(function (d)
+                  {
+                      console.log(d);
+
+                      vm[target] = d;
+
+                      deferred.resolve();
+                  }
+                  )
+
+                  return deferred.promise;
+              }
+
+        getJson('app/pages/management/accumulationRelease/accumulationRelease.json', 'smartTableData').then(function ()
+        {
+
+           }
+        );
    
 
 

@@ -4,42 +4,35 @@
     <div class="col-md-12">
       <div ba-panel ba-panel-title="记录列表" ba-panel-class="with-scroll">
         <div class="horizontal-scroll">
-          <div class="form-group select-page-size-wrap ">
-            <label>行/页
-              <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
-                      ng-model="smartTablePageSize" ng-options="i for i in [5,10,15,20,25]">
-              </select>
-            </label>
-          </div>
-          <table class="table" st-table="smartTableData">
+          <table class="table">
             <thead>
             <tr class="sortable ">
-              <th class="table-id" st-sort="id" st-sort-default="true">#</th>
-              <th st-sort="userId">用户id</th>
-              <th st-sort="userName">用户名</th>
-              <th st-sort="creditItem">积分条目</th>
-              <th st-sort="creditScore">积分分数</th>
-              <th st-sort="updateUser">上传者</th>
-              <th st-sort="month">月份</th>
+              <th class="table-id">#</th>
+              <th>用户id</th>
+              <th>用户名</th>
+              <th>积分条目</th>
+              <th>积分分数</th>
+              <th>上传者</th>
+              <th>月份</th>
             </tr>
             <tr>
               <th></th>
-              <th><input st-search="userId" placeholder="Search First Name" class="input-sm form-control search-input"
+              <th><input ng-model="search.userId"  placeholder="Search userId" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input st-search="userName" placeholder="Search Last Name" class="input-sm form-control search-input"
+              <th><input ng-model="search.userName" placeholder="Search Last Name" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input st-search="creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
+              <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input st-search="creditScore" placeholder="Search creditScore" class="input-sm form-control search-input"
+              <th><input ng-model="search.creditScore" placeholder="Search creditScore" class="input-sm form-control search-input"
                          type="search"/></th>
-              <th><input st-search="updateUser" placeholder="Search updateUser" class="input-sm form-control search-input" type="search"/>
+              <th><input ng-model="search.updateUser" placeholder="Search updateUser" class="input-sm form-control search-input" type="search"/>
               </th>
-              <th><input st-search="month" placeholder="Search month" class="input-sm form-control search-input" type="search"/>
+              <th><input ng-model="search.month" placeholder="Search month" class="input-sm form-control search-input" type="search"/>
               </th>
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="item in controller.smartTableData">
+            <tr  ng-repeat="item in releaseCtrl.smartTableData | filter:search:strict">
               <td class="table-id">{{item.id}}</td>
               <td>{{item.userId}}</td>
               <td>{{item.userName}}</td>
@@ -51,7 +44,7 @@
             </tbody>
             <tfoot>
             <tr>
-              <td colspan="6" class="text-center">
+              <td colspan="7" class="text-center">
                 <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
               </td>
             </tr>

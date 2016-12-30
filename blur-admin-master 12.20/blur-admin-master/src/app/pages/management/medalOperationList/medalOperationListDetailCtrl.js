@@ -22,13 +22,13 @@
 			if(vm.mail.isEnable == "1"){
 				$("#isEnable").attr("checked",true);
 			}
-			else{
+			if(vm.mail.isEnable == "0"){
 				$("#isEnable1").attr("checked",true);
 			}; 
 			if(vm.mail.growType == "1"){
 				$("#growType").attr("checked",true);
 			}
-			else{
+			if(vm.mail.growType == "0"){
 				$("#growType1").attr("checked",true);
 			}; 
 		});
