@@ -15,7 +15,7 @@
           url: '/accumulationRule',
           templateUrl: 'app/pages/accumulation/accumulationRule/accumulationRule.html',
           controller: 'accumulationRuleCtrl',
-          controllerAs: 'RuleCtrl',
+          controllerAs: 'ruleCtrl',
           title: '积分规则',
           sidebarMeta: {
             icon: 'ion-android-home',

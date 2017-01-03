@@ -8,7 +8,8 @@
   angular.module('BlurAdmin.pages.medal', [
       'BlurAdmin.pages.medal.rank',
       'BlurAdmin.pages.medal.mymedal',
-      'BlurAdmin.pages.medal.history'
+      'BlurAdmin.pages.medal.history',
+      'BlurAdmin.pages.medal.rule'
     ])
     .config(routeConfig);
 

@@ -4,47 +4,36 @@
 
       <div class="row">
         <div class="col-md-12">
-          <div ba-panel ba-panel-title="Smart Table With Filtering, Sorting And Pagination" ba-panel-class="with-scroll">
+          <div ba-panel ba-panel-title="积分列表" ba-panel-class="with-scroll">
             <div class="horizontal-scroll">
-              <div class="form-group select-page-size-wrap ">
-                <label>Rows on page
-                  <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
-                          ng-model="smartTablePageSize" ng-options="i for i in [5,10,15,20,25]">
-                  </select>
-                </label>
-              </div>
-              <table class="table" st-table="smartTableData">
+              <table class="table">
                 <thead>
                 <tr class="sortable ">
-                  <th class="table-id" st-sort="id" st-sort-default="true">#</th>
-                  <th st-sort="firstName">First Name</th>
-                  <th st-sort="lastName">Last Name</th>
-                  <th st-sort="username">Username</th>
-                  <th st-sort="email">Email</th>
-                  <th st-sort="age">Age</th>
+                  <th class="table-id">#</th>
+                  <th>用户名</th>
+                  <th>积分条目</th>
+                  <th>积分分值</th>
+                  <th>获得时间</th>
                 </tr>
                 <tr>
                   <th></th>
-                  <th><input st-search="firstName" placeholder="Search First Name" class="input-sm form-control search-input"
+                  <th><input ng-model="search.userName" placeholder="Search userName" class="input-sm form-control search-input"
                              type="search"/></th>
-                  <th><input st-search="lastName" placeholder="Search Last Name" class="input-sm form-control search-input"
+                  <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
                              type="search"/></th>
-                  <th><input st-search="username" placeholder="Search Username" class="input-sm form-control search-input"
+                  <th><input ng-model="search.creditScore" placeholder="Search creditScore" class="input-sm form-control search-input"
                              type="search"/></th>
-                  <th><input st-search="email" placeholder="Search Email" class="input-sm form-control search-input" type="search"/>
-                  </th>
-                  <th><input st-search="age" placeholder="Search Age" class="input-sm form-control search-input" type="search"/>
+                  <th><input ng-model="search.updateTime" placeholder="Search updateTime" class="input-sm form-control search-input" type="search"/>
                   </th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="item in smartTableData">
+                <tr  ng-repeat="item in accumulationCtrl.smartTableData | filter:search:strict">
                   <td class="table-id">{{item.id}}</td>
-                  <td>{{item.firstName}}</td>
-                  <td>{{item.lastName}}</td>
-                  <td>{{item.username}}</td>
-                  <td><a class="email-link" ng-href="mailto:{{item.email}}">{{item.email}}</a></td>
-                  <td>{{item.age}}</td>
+                  <td>{{item.userName}}</td>
+                  <td>{{item.creditItem}}</td>
+                  <td>{{item.creditScore}}</td>
+                  <td>{{item.updateTime}}</td>
                 </tr>
                 </tbody>
                 <tfoot>
@@ -68,47 +57,36 @@
 
       <div class="row">
         <div class="col-md-12">
-          <div ba-panel ba-panel-title="Smart Table With Filtering, Sorting And Pagination" ba-panel-class="with-scroll">
+          <div ba-panel ba-panel-title="积分列表" ba-panel-class="with-scroll">
             <div class="horizontal-scroll">
-              <div class="form-group select-page-size-wrap ">
-                <label>Rows on page
-                  <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
-                          ng-model="smartTablePageSize" ng-options="i for i in [5,10,15,20,25]">
-                  </select>
-                </label>
-              </div>
-              <table class="table" st-table="smartTableData2">
+              <table class="table">
                 <thead>
                 <tr class="sortable ">
-                  <th class="table-id" st-sort="id" st-sort-default="true">#</th>
-                  <th st-sort="firstName">First Name</th>
-                  <th st-sort="lastName">Last Name</th>
-                  <th st-sort="username">Username</th>
-                  <th st-sort="email">Email</th>
-                  <th st-sort="age">Age</th>
+                  <th class="table-id">#</th>
+                  <th>用户名</th>
+                  <th>积分条目</th>
+                  <th>积分分值</th>
+                  <th>获得时间</th>
                 </tr>
                 <tr>
                   <th></th>
-                  <th><input st-search="firstName" placeholder="Search First Name" class="input-sm form-control search-input"
+                  <th><input ng-model="search.userName" placeholder="Search userName" class="input-sm form-control search-input"
                              type="search"/></th>
-                  <th><input st-search="lastName" placeholder="Search Last Name" class="input-sm form-control search-input"
+                  <th><input ng-model="search.creditItem" placeholder="Search creditItem" class="input-sm form-control search-input"
                              type="search"/></th>
-                  <th><input st-search="username" placeholder="Search Username" class="input-sm form-control search-input"
+                  <th><input ng-model="search.creditScore" placeholder="Search creditScore" class="input-sm form-control search-input"
                              type="search"/></th>
-                  <th><input st-search="email" placeholder="Search Email" class="input-sm form-control search-input" type="search"/>
-                  </th>
-                  <th><input st-search="age" placeholder="Search Age" class="input-sm form-control search-input" type="search"/>
+                  <th><input ng-model="search.updateTime" placeholder="Search updateTime" class="input-sm form-control search-input" type="search"/>
                   </th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="item in smartTableData2">
+                <tr  ng-repeat="item in accumulationCtrl.smartTableData | filter:search:strict">
                   <td class="table-id">{{item.id}}</td>
-                  <td>{{item.firstName}}</td>
-                  <td>{{item.lastName}}</td>
-                  <td>{{item.username}}</td>
-                  <td><a class="email-link" ng-href="mailto:{{item.email}}">{{item.email}}</a></td>
-                  <td>{{item.age}}</td>
+                  <td>{{item.userName}}</td>
+                  <td>{{item.creditItem}}</td>
+                  <td>{{item.creditScore}}</td>
+                  <td>{{item.updateTime}}</td>
                 </tr>
                 </tbody>
                 <tfoot>
@@ -131,7 +109,6 @@
     <p>
       还没到2017年哟，让我们来期待明年的业绩吧~
     </p>
-
     <div class="text-center">
       <div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="{{::( 'Shop' | kameleonImg )}}"></div>
       <div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="{{::( 'Programming' | kameleonImg )}}"></div>

@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.management.accumulationOperationList')
+  angular.module('BlurAdmin.pages.accumulation.accumulationRule')
       .controller('accumulationRuleCtrl', accumulationRuleCtrl);
 
   /** @ngInject */
@@ -15,7 +15,7 @@
 
         $http.get('app/pages/accumulation/accumulationRule/accumulationRule.json').success(function (res)
         {
-           vm.ruleIntro = res[0].ruleIntro;
+           vm.ruleIntro = res[0];
            });
 
   }

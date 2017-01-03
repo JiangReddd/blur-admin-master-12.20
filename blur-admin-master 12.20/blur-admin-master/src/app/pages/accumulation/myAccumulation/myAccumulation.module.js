@@ -15,6 +15,7 @@
           url: '/myAccumulation',
           templateUrl: 'app/pages/accumulation/myAccumulation/myAccumulation.html',
           controller: 'myAccumulationCtrl',
+          controllerAs: 'accumulationCtrl',
           title: '我的积分',
           sidebarMeta: {
             icon: 'ion-android-home',
