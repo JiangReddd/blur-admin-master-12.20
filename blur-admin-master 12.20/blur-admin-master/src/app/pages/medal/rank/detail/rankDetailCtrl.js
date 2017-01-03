@@ -17,7 +17,7 @@
 				if (a.date < b.date) return -1;
 			}).reverse();
 			vm.mail = messages.filter(function(m) {
-				return m.id == $stateParams.id;
+				return m.userId == $stateParams.userId;
 			})[0];   
 		});
 		vm.label = $stateParams.label;

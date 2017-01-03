@@ -46,7 +46,7 @@
           controller: "rankListCtrl",
           controllerAs: "listCtrl"
         }).state('medal.rank.detail', {
-          url: '/:label/:id',
+          url: '/:label/:userId',
           templateUrl: 'app/pages/medal/rank/detail/rankDetail.html',
           title: '综合排行榜 - 个人信息',
           controller: "rankDetailCtrl",

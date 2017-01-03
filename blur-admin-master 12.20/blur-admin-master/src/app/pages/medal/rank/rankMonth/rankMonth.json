@@ -1,9 +1,9 @@
 [{
 
-    "description": "奖牌名称",
-    "stats": "奖牌副标题",
+    "description": "",
+    "stats": "笔杆子",
     "icon": "Apartment",
-    "img": "assets/img/theme/icon/kameleon/Apartment.svg",
+    "img": "assets/img/app/profile/biganzi.png",
     "list": [{
         "image": "assets/img/theme/icon/kameleon/Magician.svg",
         "browser": "赵大锤",
@@ -52,10 +52,10 @@
     }]
 }, {
 
-    "description": "奖牌名称",
-    "stats": "奖牌副标题",
+    "description": "gaoxiaowang",
+    "stats": "高效王",
     "icon": "Bus",
-    "img": "assets/img/theme/icon/kameleon/Bus.svg",
+    "img": "assets/img/app/profile/gaoxiaowang.png",
     "list": [{
         "image": "assets/img/theme/icon/kameleon/Magician.svg",
         "browser": "赵大锤",
@@ -104,10 +104,10 @@
     }]
 }, {
 
-    "description": "奖牌名称",
-    "stats": "奖牌副标题",
+    "description": "jiangshi",
+    "stats": "讲师",
     "icon": "Checklist",
-    "img": "assets/img/theme/icon/kameleon/Checklist.svg",
+    "img": "assets/img/app/profile/jiangshi.png",
     "list": [{
         "image": "assets/img/theme/icon/kameleon/Magician.svg",
         "browser": "赵大锤",
@@ -156,10 +156,10 @@
     }]
 }, {
 
-    "description": "奖牌名称",
-    "stats": "奖牌副标题",
+    "description": "Akawang",
+    "stats": "A咖王",
     "icon": "Desert",
-    "img": "assets/img/theme/icon/kameleon/Desert.svg",
+    "img": "assets/img/app/profile/Akawang.png",
     "list": [{
         "image": "assets/img/theme/icon/kameleon/Magician.svg",
         "browser": "赵大锤",
@@ -208,10 +208,10 @@
     }]
 }, {
 
-    "description": "奖牌名称",
-    "stats": "奖牌副标题",
+    "description": "gaochanwang",
+    "stats": "高产王",
     "icon": "Makeup",
-    "img": "assets/img/theme/icon/kameleon/Makeup.svg",
+    "img": "assets/img/app/profile/gaochanwang.png",
     "list": [{
         "image": "assets/img/theme/icon/kameleon/Magician.svg",
         "browser": "赵大锤",
