@@ -19,7 +19,7 @@
           <h2 class="name-h second-name">{{detailCtrl.mail.name.split(' ')[1]}}</h2>
 
           <div>
-            <span class="mail-tag tag label {{detailCtrl.mail.tag}}">{{detailCtrl.mail.tag}}</span>
+            <span class="mail-tag tag label {{detailCtrl.mail.tag}}"><!-- {{detailCtrl.mail.tag}} --></span>
           </div>
         </div>
       </div>
@@ -42,41 +42,22 @@
             <span class="position">{{detailCtrl.mail.position}}</span>
           </div>
           <div>
-            <span class="address">12 Nezavisimosti st. Vilnius, Lithuania</span>
+            <span class="address">客户服务中心</span>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
     </div>
-    <div class="line"></div>
-    <div class="message-details">
+<!--     <div class="line"></div>
+     <div class="message-details">
       <span class="subject">{{detailCtrl.mail.subject}} </span>
       <span class="date">• {{detailCtrl.mail.date | date : 'h:mm a MMMM d '}}</span>
     </div>
-    <div class="line"></div>
-    <div ng-bind-html="detailCtrl.mail.body" class="message-body">
-
+    <div class="line"></div> -->
+    <div class="message-details">
+      <span class="date">本月积分：{{detailCtrl.mail.accumulationScore}} </span>
+      <span class="date">本月排名：{{detailCtrl.mail.accumulationRank}} </span>
     </div>
     <div class="line"></div>
-    <div class="attachment" ng-show="detailCtrl.mail.attachment">
-      <span class="file-links">1 Attachment - <a href>View</a> | <a href>Download</a></span>
-      <div>
-        <i class="file-icon ion-document"></i>
-        <span class="file-name">{{detailCtrl.mail.attachment}}</span>
-      </div>
-    </div>
-    <div class="line" ng-show="detailCtrl.mail.attachment"></div>
-    <div class="answer-container">
-      <button type="button" class="btn btn-with-icon" ng-click="tabCtrl.showCompose(detailCtrl.mail.subject,detailCtrl.mail.email,'')"><i class="ion-reply"></i>Reply</button>
-      <button type="button" class="btn btn-with-icon" ng-click="tabCtrl.showCompose(detailCtrl.mail.subject,'',detailCtrl.mail.body)"><i class="ion-forward"></i>Forward</button>
-      <button type="button" class="btn btn-with-icon"><i class="ion-printer"></i>Print</button>
-      <button type="button" class="btn btn-with-icon"><i class="ion-android-remove-circle"></i>Spam</button>
-      <button type="button" class="btn btn-with-icon"><i class="ion-android-delete"></i>Delete</button>
-    </div>
-
-  </div>
-  <div ng-show="!detailCtrl.mail">
-    <h5 ng-class="text-center">Nothing to show</h5>
-  </div>
 </div>

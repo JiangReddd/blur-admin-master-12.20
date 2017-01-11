@@ -1,7 +1,7 @@
 <!-- todo: remove whole block -->
 <div ba-panel>
   <section id="cd-timeline" class="cd-container cssanimations" ng-controller="TimelineCtrl">
-    <div class="cd-timeline-block">
+    <!-- <div class="cd-timeline-block">
       <div class="cd-timeline-img">
         <div class="kameleon-icon with-round-bg warning"><img ng-src="{{::( 'Euro-Coin' | kameleonImg )}}"></div>
       </div>
@@ -96,6 +96,57 @@
           scelerisque sed, euismod id eros.</p>
         <span class="cd-date">Feb 24</span>
       </div>
+    </div> -->
+    <div class="cd-timeline-block" ng-repeat="historys in history">
+      <div class="cd-timeline-img" ng-if="$index%2=='0'">
+        <div class="kameleon-icon with-round-bg warning"><img ng-src="{{::( 'Vector' | kameleonImg )}}"></div>
+      </div>
+      <div class="cd-timeline-img" ng-if="$index%3=='1'">
+        <div class="kameleon-icon with-round-bg primary"><img ng-src="{{::( 'Money-Increase' | kameleonImg )}}"></div>
+      </div>
+      <div class="cd-timeline-img" ng-if="$index%3=='2'">
+        <div class="kameleon-icon with-round-bg danger"><img ng-src="{{::( 'Online-Shopping' | kameleonImg )}}"></div>
+      </div>
+
+      <div class="cd-timeline-content warning" ng-if="$index%3=='0'">
+        <h5>当月记录</h5>
+
+        <p ng-repeat="list in historys.medalList">
+          {{list.medalName}}等级升级为{{list.level}}
+          <span class="newMedal" ng-if="list.level=='1'">
+            新获得!
+          </span>
+        </p>
+        <span class="cd-date">{{historys.updateTime}}</span>
+      </div>
+
+
+
+      <div class="cd-timeline-content primary" ng-if="$index%3=='1'">
+        <h5>当月记录</h5>
+
+        <p ng-repeat="list in historys.medalList">{{list.medalName}}等级升级为{{list.level}}
+          <span class="newMedal" ng-if="list.level=='1'">
+            新获得!
+          </span>
+        </p>
+        <span class="cd-date">{{historys.updateTime}}</span>
+      </div>
+
+
+
+      <div class="cd-timeline-content danger" ng-if="$index%3=='2'">
+        <h5>当月记录</h5>
+
+        <p ng-repeat="list in historys.medalList">{{list.medalName}}等级升级为{{list.level}}
+          <span class="newMedal" ng-if="list.level=='1'">
+            新获得!
+          </span>
+        </p>
+        <span class="cd-date">{{historys.updateTime}}</span>
+      </div>
+
+
     </div>
   </section>
 </div>

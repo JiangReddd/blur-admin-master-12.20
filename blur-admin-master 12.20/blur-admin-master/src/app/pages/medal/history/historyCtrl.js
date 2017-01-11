@@ -9,7 +9,10 @@
       .controller('TimelineCtrl', TimelineCtrl);
 
   /** @ngInject */
-  function TimelineCtrl() {
+  function TimelineCtrl($http,$scope) {
+
+
+
     var timelineBlocks = $('.cd-timeline-block'),
         offset = 0.8;
 
@@ -39,6 +42,12 @@
       blocks.each(function () {
         ( $(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
       });
-    }
+    };
+
+    $http.get('app/pages/medal/history/history.json').success(function(res) {
+          $scope.history = res;
+          //console.log($scope.history);
+      });
+
   }
 })();

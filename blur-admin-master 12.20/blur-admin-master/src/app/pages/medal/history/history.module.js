@@ -14,8 +14,8 @@
       .state('medal.history', {
         url: '/history',
         templateUrl: 'app/pages/medal/history/history.html',
-          title: '发放记录',
-          sidebarMeta: {
+        title: '发放记录',
+        sidebarMeta: {
             icon: 'ion-ios-pulse',
             order: 100,
           },

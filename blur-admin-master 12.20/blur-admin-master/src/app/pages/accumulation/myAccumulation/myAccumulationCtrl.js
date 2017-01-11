@@ -9,7 +9,7 @@
       .controller('myAccumulationCtrl', myAccumulationCtrl);
 
   /** @ngInject */
-  function myAccumulationCtrl($http, $q, $filter, editableOptions, editableThemes) {
+  function myAccumulationCtrl($scope,$http, $q, $filter, editableOptions, editableThemes) {
 
           var vm = this;
 
@@ -30,17 +30,22 @@
               return deferred.promise;
           }
 
-
-          getJson('app/pages/accumulation/myAccumulation/myAccumulation.json', 'smartTableData').then(function ()
+          
+          getJson('app/pages/accumulation/myAccumulation/myAccumulation.json', 'accumulationData').then(function ()
           {
+           
+          });
 
-             }
-          );
+          vm.test = new Date();
+          vm.test1 = vm.test.getYear() + 1900;
+          console.log(vm.test1);
 
-/*          vm.test = function(){
-            console.log("1");
+          vm.year = function(yearNum){
+             var url = "app/pages/accumulation/myAccumulation/myAccumulation" + yearNum + ".json";
+             //console.log(url);
+             getJson(url, 'accumulationData2');
           }
-*/
+
   }
 
 })();
