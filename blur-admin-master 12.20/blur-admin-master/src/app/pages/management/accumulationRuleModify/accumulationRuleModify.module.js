@@ -15,6 +15,8 @@
           url: '/accumulationRuleModify',
           templateUrl: 'app/pages/management/accumulationRuleModify/accumulationRuleModify.html',
           title: '积分规则修改',
+          controller:"accumulationRuleModifyCtrl",
+          controllerAs:"ModifyCtrl",
           sidebarMeta: {
             icon: 'ion-android-home',
             order: 400,

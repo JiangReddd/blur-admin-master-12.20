@@ -23,18 +23,18 @@
           },
         }).state('accumulation.grouprank.groupAll', {
           url: '/groupAll',
-          template: '<group-all></group-all>',
+          templateUrl: 'app/pages/accumulation/grouprank/groupAll/groupAll.html',
           title: '班组排行榜 - 全部班组排行榜',
           controller: "groupAllCtrl",
-          controllerAs: "groupAll"
+          controllerAs: "allListCtrl"
         }).state('accumulation.grouprank.label', {
-          url: '/:label',
+          url: '/inbox',
           templateUrl: 'app/pages/accumulation/grouprank/groupPart/groupPart.html',
           title: '综合排行榜 - 个人排行榜',
           controller: "groupPartCtrl",
           controllerAs: "listCtrl",
         }).state('accumulation.grouprank.detail', {
-          url: '/:label/:id',
+          url: '/inbox/:id',
           templateUrl: 'app/pages/accumulation/grouprank/groupDetail/groupDetail.html',
           title: '综合排行榜 - 个人信息',
           controller: "groupDetailCtrl",

@@ -15,6 +15,8 @@
           url: '/medalRuleModify',
           templateUrl: 'app/pages/management/medalRuleModify/medalRuleModify.html',
           title: '勋章规则修改',
+          controller:"medalRuleModifyCtrl",
+          controllerAs:"ModifyCtrl",
           sidebarMeta: {
             icon: 'ion-android-home',
             order: 0,

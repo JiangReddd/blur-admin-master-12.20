@@ -2,59 +2,28 @@
  * @author a.demeshko
  * created on 28.12.2015
  */
-(function () {
+(function() {
   'use strict';
 
   angular.module('BlurAdmin.pages.accumulation.grouprank')
     .controller('groupAllCtrl', groupAllCtrl);
 
   /** @ngInject */
-  function groupAllCtrl($scope, $timeout, $http, baConfig, baUtil) {
-    var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
-    $http.get('app/pages/accumulation/grouprank/groupAll/groupAll.json').then(function(response) {
-      $scope.charts = response.data.map(function(i) {
-        i.color = pieColor;
-        return i;
-      });
+  function groupAllCtrl($scope,$stateParams,$http) {
+    var vm = this;
+    $http.get('app/pages/accumulation/grouprank/grouprankAll.json').then(function(res) {
+      var messages = res.data.sort(function(a, b) {
+        if (a.date > b.date) return 1;
+        if (a.date < b.date) return -1;
+      }).reverse();
+      vm.messages = messages;
+      // vm.getMessageById = function(id) {
+      //   return messages.filter(function(m) {
+      //     return m.id == id;
+      //   })[0];
+      // };
+      //     
+      vm.label = $stateParams.label;
     });
-
-    function getRandomArbitrary(min, max) {
-      return Math.random() * (max - min) + min;
-    }
-
-    function loadPieCharts() {
-      $('.chart').each(function() {
-        var chart = $(this);
-        chart.easyPieChart({
-          easing: 'easeOutBounce',
-          onStep: function(from, to, percent) {
-            $(this.el).find('.percent').text(Math.round(percent));
-          },
-          barColor: chart.attr('rel'),
-          trackColor: 'rgba(0,0,0,0)',
-          size: 84,
-          scaleLength: 0,
-          animation: 2000,
-          lineWidth: 9,
-          lineCap: 'round',
-        });
-      });
-
-      $('.refresh-data').on('click', function() {
-        updatePieCharts();
-      });
-    }
-
-    function updatePieCharts() {
-      $('.pie-charts .chart').each(function(index, chart) {
-        $(chart).data('easyPieChart').update(getRandomArbitrary(55, 90));
-      });
-    }
-
-    $timeout(function() {
-      loadPieCharts();
-      updatePieCharts();
-    }, 1000);
   }
-
 })();

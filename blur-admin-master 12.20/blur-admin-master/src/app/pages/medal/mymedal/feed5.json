@@ -5,7 +5,6 @@
         "userId":"liyi",
         "userName":"李毅",
         "medalEnName": "jindianzi",
-        "preview": "app/feed/vader-and-me-preview.png",
         "level":"1"
     },    
     {
@@ -14,7 +13,6 @@
         "userId":"liyi",
         "userName":"李毅",
         "medalEnName": "Akawang",
-        "preview": "app/feed/vader-and-me-preview.png",
         "level":"1"
     },    
     {
@@ -23,7 +21,6 @@
         "userId":"liyi",
         "userName":"李毅",
         "medalEnName": "gaochanwang",
-        "preview": "app/feed/vader-and-me-preview.png",
         "level":"3"
     },
         {
@@ -32,7 +29,6 @@
         "userId":"liyi",
         "userName":"李毅",
         "medalEnName": "biganzi",
-        "preview": "app/feed/vader-and-me-preview.png",
         "level":"3"
     },
         {
@@ -41,7 +37,6 @@
         "userId":"liyi",
         "userName":"李毅",
         "medalEnName": "gaoxiaowang",
-        "preview": "app/feed/vader-and-me-preview.png",
         "level":"1"
     },
         {
@@ -50,7 +45,6 @@
         "userId":"liyi",
         "userName":"李毅",
         "medalEnName": "jiangshi",
-        "preview": "app/feed/vader-and-me-preview.png",
         "level":"5"
     }
     ]

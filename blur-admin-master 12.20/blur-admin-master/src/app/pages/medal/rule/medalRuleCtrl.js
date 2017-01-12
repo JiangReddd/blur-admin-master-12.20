@@ -13,9 +13,9 @@
 
         var vm = this;
 
-        $http.get('app/pages/medal/rule/rule.json').success(function (res)
+        $http.get('/admin/getMedalRule').success(function (res)
         {
-           vm.ruleIntro = res[0];
+           vm.ruleIntro = res.body.ruleInfo;
            });
 
   }
