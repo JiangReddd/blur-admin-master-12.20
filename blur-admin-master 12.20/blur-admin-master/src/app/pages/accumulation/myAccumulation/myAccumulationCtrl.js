@@ -31,13 +31,13 @@
           }
 
           
-          getJson('app/pages/accumulation/myAccumulation/myAccumulation.json', 'accumulationData').then(function ()
+          getJson('app/pages/accumulation/myAccumulation/myAccumulation2017.json', 'accumulationData').then(function ()
           {
            
           });
 
           vm.test = new Date();
-          vm.test1 = vm.test.getYear() + 1900;
+          vm.test1 = vm.test.getYear() + 1901;
           console.log(vm.test1);
 
           vm.year = function(yearNum){
