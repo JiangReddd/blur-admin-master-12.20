@@ -23,6 +23,11 @@
 
       'BlurAdmin.pages.management.accumulationRelease',
 
+      'BlurAdmin.pages.management.userManagement',
+
+      'BlurAdmin.pages.management.groupManagement'
+
+
     ])
     .config(routeConfig);
 
@@ -36,7 +41,7 @@
         title: '用户管理',
         sidebarMeta: {
           icon: 'ion-ios-person',
-          order: 100,
+          order: 200,
         },
       });
   }
